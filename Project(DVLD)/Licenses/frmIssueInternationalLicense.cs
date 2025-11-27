@@ -1,4 +1,5 @@
 ﻿using DVLD_BusinessLayer.Application;
+using DVLD_BusinessLayer.Drivers;
 using DVLD_BusinessLayer.GeneralClasses;
 using DVLD_BusinessLayer.Licenses;
 using System;
@@ -21,6 +22,14 @@ namespace Project_DVLD_.Licenses
         {
             InitializeComponent();
         }
+        
+        public frmIssueInternationalLicense(int DriverID)
+        {
+            InitializeComponent();
+            clsLicenses LicenseInfo = clsLicenses.GetSpecificLicenseForDriver(DriverID, 13);
+            ucFindLicense1.FillData(LicenseInfo.LicenseID);
+            ucFindLicense1_OnLicenseSelected(LicenseInfo.LicenseID);
+        }
 
         private void frmIssueInternationalLicense_Load(object sender, EventArgs e)
         {
@@ -34,9 +43,6 @@ namespace Project_DVLD_.Licenses
                 btnIssue.Enabled = false;
             }
         }
-
-
-        
 
         private void ucFindLicense1_OnLicenseSelected(int obj)
         {
@@ -86,6 +92,8 @@ namespace Project_DVLD_.Licenses
             lbInternationalLicenseID.Text = NewInternationalLicense.InternationalLicenseID.ToString();
             lbLastStatusDate.Text = DateTime.Now.ToString();
             lbExpirationDate.Text = NewInternationalLicense.ExpirationDate.ToString();
+            lbPersonID.Text = NewInternationalLicense.PersonID.ToString();
+            lbLocalLicenseID.Text = NewInternationalLicense.LocalLicenseID.ToString();
             gbApplicationInfo.Enabled = true;
             btnIssue.Enabled = false;
 

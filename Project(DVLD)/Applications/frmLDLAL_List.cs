@@ -213,6 +213,14 @@ namespace Project_DVLD_.Applications
             {
                 e.Handled = (!char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar));
             }
+
+            if (cbFilterBy.Text == "FullName")
+            {
+                e.Handled = (!char.IsLetter(e.KeyChar) && 
+                !char.IsWhiteSpace(e.KeyChar) && 
+                e.KeyChar != (char)Keys.Back && 
+                !(Control.ModifierKeys == Keys.Control));
+            }
         }
 
         private void txtSearch_TextChanged(object sender, EventArgs e)

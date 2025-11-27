@@ -1,4 +1,5 @@
 ﻿using DVLD_BusinessLayer.Drivers;
+using DVLD_BusinessLayer.Licenses;
 using Project_DVLD_.Licenses;
 using Project_DVLD_.People;
 using System;
@@ -106,7 +107,14 @@ namespace Project_DVLD_
 
         private void issueInternationalLicenseToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Form frm = new frmIssueInternationalLicense();
+            if(clsInternationalLicenses.DoesDriverHaveActiveLicense((int)dgvDriversList.CurrentRow.Cells[0].Value))
+            {
+                MessageBox.Show("This driver already has an active international license.", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+
+            Form frm = new frmIssueInternationalLicense((int)dgvDriversList.CurrentRow.Cells[0].Value);
             frm.ShowDialog();
             _RefreshDriversTable();
         }
@@ -127,10 +135,8 @@ namespace Project_DVLD_
 
         private void txtSearch_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (!char.IsDigit(e.KeyChar) && e.KeyChar != (char)8)
-            {
-                e.Handled = true;
-            }
+            if(cbFilterBy.Text != "Full Name" && cbFilterBy.Text != "National No.")
+                e.Handled = (!char.IsDigit(e.KeyChar) && e.KeyChar != (char)8);
         }
     }
 }

@@ -38,6 +38,7 @@ namespace Project_DVLD_.Licenses
                 contextMenuStrip1.Enabled = true;
             }
             dgvDetainList.DataSource = dtDetainedLicenses;
+            lbRecords.Text = dgvDetainList.Rows.Count.ToString();
         }
         private void btnClose_Click(object sender, EventArgs e)
         {
@@ -153,9 +154,23 @@ namespace Project_DVLD_.Licenses
 
         private void releaseLicenseToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Form frm = new frmReleaseDetainedLicense();
+            int LicenseID = (int)dgvDetainList.CurrentRow.Cells[1].Value;
+            if(!clsDetainedLicenses.isDetained(LicenseID))
+            {
+                MessageBox.Show("This license is not detained.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
+            Form frm = new frmReleaseDetainedLicense((int)dgvDetainList.CurrentRow.Cells[0].Value);
             frm.ShowDialog();
             _RefreshDetainedTable();
+        }
+
+        private void txtSearch_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true;
+            }
         }
     }
 }

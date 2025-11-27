@@ -100,10 +100,10 @@
     <Compile Include="Applications\frmShowLDLA_Info.Designer.cs">
       <DependentUpon>frmShowLDLA_Info.cs</DependentUpon>
     </Compile>
-    <Compile Include="Applications\frm_IL_List.cs">
+    <Compile Include="Licenses\frm_IL_List.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Applications\frm_IL_List.Designer.cs">
+    <Compile Include="Licenses\frm_IL_List.Designer.cs">
       <DependentUpon>frm_IL_List.cs</DependentUpon>
     </Compile>
     <Compile Include="Tests\controls\ucAppointmentInfo.cs">
@@ -345,7 +345,7 @@
     <EmbeddedResource Include="Applications\frmShowLDLA_Info.resx">
       <DependentUpon>frmShowLDLA_Info.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Applications\frm_IL_List.resx">
+    <EmbeddedResource Include="Licenses\frm_IL_List.resx">
       <DependentUpon>frm_IL_List.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Tests\controls\ucAppointmentInfo.resx">
@@ -837,6 +837,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\warning32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\scheduletest.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\licenseInfo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\licenses.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

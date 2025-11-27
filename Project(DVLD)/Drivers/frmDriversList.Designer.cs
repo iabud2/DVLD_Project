@@ -140,10 +140,11 @@
             this.toolStripMenuItem2,
             this.showDriverLicenseHistoryToolStripMenuItem});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(221, 82);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(221, 104);
             // 
             // showPersonInfoToolStripMenuItem
             // 
+            this.showPersonInfoToolStripMenuItem.Image = global::Project_DVLD_.Properties.Resources.Details32px;
             this.showPersonInfoToolStripMenuItem.Name = "showPersonInfoToolStripMenuItem";
             this.showPersonInfoToolStripMenuItem.Size = new System.Drawing.Size(220, 22);
             this.showPersonInfoToolStripMenuItem.Text = "Show &Person Info";
@@ -156,6 +157,7 @@
             // 
             // issueInternationalLicenseToolStripMenuItem
             // 
+            this.issueInternationalLicenseToolStripMenuItem.Image = global::Project_DVLD_.Properties.Resources.Earth;
             this.issueInternationalLicenseToolStripMenuItem.Name = "issueInternationalLicenseToolStripMenuItem";
             this.issueInternationalLicenseToolStripMenuItem.Size = new System.Drawing.Size(220, 22);
             this.issueInternationalLicenseToolStripMenuItem.Text = "Issue &International License";
@@ -168,6 +170,7 @@
             // 
             // showDriverLicenseHistoryToolStripMenuItem
             // 
+            this.showDriverLicenseHistoryToolStripMenuItem.Image = global::Project_DVLD_.Properties.Resources.licenseInfo;
             this.showDriverLicenseHistoryToolStripMenuItem.Name = "showDriverLicenseHistoryToolStripMenuItem";
             this.showDriverLicenseHistoryToolStripMenuItem.Size = new System.Drawing.Size(220, 22);
             this.showDriverLicenseHistoryToolStripMenuItem.Text = "Show Driver License &History";

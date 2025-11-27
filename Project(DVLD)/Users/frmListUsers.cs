@@ -1,4 +1,5 @@
 ﻿using DVLD_BusinessLayer;
+using DVLD_BusinessLayer.GeneralClasses;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -210,6 +211,13 @@ namespace Project_DVLD_.Users
         private void deleteToolStripMenuItem_Click(object sender, EventArgs e)
         {
             int SelectedUserID = (int)dgvUsersList.CurrentRow.Cells[0].Value;
+
+            if(SelectedUserID == clsGlobal.CurrentUserLogedin.UserID)
+            {
+                MessageBox.Show("You Can't Delete The Current Logged In User!", "Delete User", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
             if ((MessageBox.Show("Are you sure you want to delete User with User ID: " + SelectedUserID + " ?", "Delete User", MessageBoxButtons.OKCancel, MessageBoxIcon.Question)) == DialogResult.OK)
             {
                 if (clsUsers.DeleteUser(SelectedUserID))

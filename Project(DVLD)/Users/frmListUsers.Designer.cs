@@ -131,6 +131,7 @@
             // 
             // showDetailsToolStripMenuItem
             // 
+            this.showDetailsToolStripMenuItem.Image = global::Project_DVLD_.Properties.Resources.Details32px;
             this.showDetailsToolStripMenuItem.Name = "showDetailsToolStripMenuItem";
             this.showDetailsToolStripMenuItem.Size = new System.Drawing.Size(168, 22);
             this.showDetailsToolStripMenuItem.Text = "&Show Details";
@@ -143,6 +144,7 @@
             // 
             // addNewUserToolStripMenuItem
             // 
+            this.addNewUserToolStripMenuItem.Image = global::Project_DVLD_.Properties.Resources.add32px;
             this.addNewUserToolStripMenuItem.Name = "addNewUserToolStripMenuItem";
             this.addNewUserToolStripMenuItem.Size = new System.Drawing.Size(168, 22);
             this.addNewUserToolStripMenuItem.Text = "Add &New User";
@@ -150,6 +152,7 @@
             // 
             // editToolStripMenuItem
             // 
+            this.editToolStripMenuItem.Image = global::Project_DVLD_.Properties.Resources.EditPerson32px;
             this.editToolStripMenuItem.Name = "editToolStripMenuItem";
             this.editToolStripMenuItem.Size = new System.Drawing.Size(168, 22);
             this.editToolStripMenuItem.Text = "&Edit";
@@ -157,6 +160,7 @@
             // 
             // deleteToolStripMenuItem
             // 
+            this.deleteToolStripMenuItem.Image = global::Project_DVLD_.Properties.Resources.DeletePerson64;
             this.deleteToolStripMenuItem.Name = "deleteToolStripMenuItem";
             this.deleteToolStripMenuItem.Size = new System.Drawing.Size(168, 22);
             this.deleteToolStripMenuItem.Text = "&Delete";
@@ -164,6 +168,7 @@
             // 
             // changePasswordToolStripMenuItem
             // 
+            this.changePasswordToolStripMenuItem.Image = global::Project_DVLD_.Properties.Resources.password;
             this.changePasswordToolStripMenuItem.Name = "changePasswordToolStripMenuItem";
             this.changePasswordToolStripMenuItem.Size = new System.Drawing.Size(168, 22);
             this.changePasswordToolStripMenuItem.Text = "Change &Password";
@@ -176,6 +181,7 @@
             // 
             // sendEmailToolStripMenuItem
             // 
+            this.sendEmailToolStripMenuItem.Image = global::Project_DVLD_.Properties.Resources.email;
             this.sendEmailToolStripMenuItem.Name = "sendEmailToolStripMenuItem";
             this.sendEmailToolStripMenuItem.Size = new System.Drawing.Size(168, 22);
             this.sendEmailToolStripMenuItem.Text = "Send &Email";
@@ -183,6 +189,7 @@
             // 
             // phoneCallToolStripMenuItem
             // 
+            this.phoneCallToolStripMenuItem.Image = global::Project_DVLD_.Properties.Resources.Phone32px;
             this.phoneCallToolStripMenuItem.Name = "phoneCallToolStripMenuItem";
             this.phoneCallToolStripMenuItem.Size = new System.Drawing.Size(168, 22);
             this.phoneCallToolStripMenuItem.Text = "Phone &Call";

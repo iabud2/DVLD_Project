@@ -183,6 +183,7 @@
             // 
             // showPersonDetailsToolStripMenuItem
             // 
+            this.showPersonDetailsToolStripMenuItem.Image = global::Project_DVLD_.Properties.Resources.Details32px;
             this.showPersonDetailsToolStripMenuItem.Name = "showPersonDetailsToolStripMenuItem";
             this.showPersonDetailsToolStripMenuItem.Size = new System.Drawing.Size(225, 22);
             this.showPersonDetailsToolStripMenuItem.Text = "Show &Person Details";
@@ -190,6 +191,7 @@
             // 
             // showLicenseDetailsToolStripMenuItem
             // 
+            this.showLicenseDetailsToolStripMenuItem.Image = global::Project_DVLD_.Properties.Resources.licenseInfo;
             this.showLicenseDetailsToolStripMenuItem.Name = "showLicenseDetailsToolStripMenuItem";
             this.showLicenseDetailsToolStripMenuItem.Size = new System.Drawing.Size(225, 22);
             this.showLicenseDetailsToolStripMenuItem.Text = "Show &License Details";
@@ -197,6 +199,7 @@
             // 
             // showPersonLicenseHistoryToolStripMenuItem
             // 
+            this.showPersonLicenseHistoryToolStripMenuItem.Image = global::Project_DVLD_.Properties.Resources.licenses;
             this.showPersonLicenseHistoryToolStripMenuItem.Name = "showPersonLicenseHistoryToolStripMenuItem";
             this.showPersonLicenseHistoryToolStripMenuItem.Size = new System.Drawing.Size(225, 22);
             this.showPersonLicenseHistoryToolStripMenuItem.Text = "Show Person License &History";

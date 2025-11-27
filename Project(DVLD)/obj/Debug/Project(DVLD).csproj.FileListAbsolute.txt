@@ -57,3 +57,4 @@ C:\Users\iabud\Desktop\me\c#\Course19(Project(DVLD))\Project(DVLD)\obj\Debug\Pro
 C:\Users\iabud\Desktop\me\c#\Course19(Project(DVLD))\Project(DVLD)\obj\Debug\Project_DVLD_.Applications.frmReleaseDetainedLicense.resources
 C:\Users\iabud\Desktop\me\c#\Course19(Project(DVLD))\Project(DVLD)\obj\Debug\Project_DVLD_.Licenses.frmManageDetainedLicenses.resources
 C:\Users\iabud\Desktop\me\c#\Course19(Project(DVLD))\Project(DVLD)\obj\Debug\Project_DVLD_.Controls.ucShowDriverInfo.resources
+C:\Users\iabud\Desktop\me\c#\Course19(Project(DVLD))\Project(DVLD)\obj\Debug\Project(DVLD).exe.config

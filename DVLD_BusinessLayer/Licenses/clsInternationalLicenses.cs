@@ -60,7 +60,7 @@ namespace DVLD_BusinessLayer.Licenses
 
             this.InternationalLicenseID = IL_ID;
             this.DriverID = driverID;
-            this.LocalLicenseID = -1;
+            this.LocalLicenseID = locallicenseID;
             this.IssueDate = issueDate;
             this.ExpirationDate = expirationDate;
             this.IsActive = isActive;
@@ -167,9 +167,9 @@ namespace DVLD_BusinessLayer.Licenses
             return InternationalLicensesDataLayer.isDriverHaveAcive_IL_ByLLID(LocalLicenseID);
         }
 
-        public static bool DoesDriverHaveActiveLicense(int IL_ID)
+        public static bool DoesDriverHaveActiveLicense(int DriverID)
         {
-            return InternationalLicensesDataLayer.isDriverHaveAcive_IL(IL_ID);
+            return InternationalLicensesDataLayer.isDriverHaveActive_IL(DriverID);
         }
 
         public static bool IsExistByDriverID(int DriverID)

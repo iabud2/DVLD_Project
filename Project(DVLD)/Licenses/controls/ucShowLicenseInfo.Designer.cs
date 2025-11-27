@@ -88,7 +88,7 @@
             // 
             this.lbTitle1.AutoSize = true;
             this.lbTitle1.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbTitle1.Location = new System.Drawing.Point(43, 20);
+            this.lbTitle1.Location = new System.Drawing.Point(60, 85);
             this.lbTitle1.Name = "lbTitle1";
             this.lbTitle1.Size = new System.Drawing.Size(57, 19);
             this.lbTitle1.TabIndex = 0;
@@ -98,7 +98,7 @@
             // 
             this.lbTitle2.AutoSize = true;
             this.lbTitle2.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbTitle2.Location = new System.Drawing.Point(43, 64);
+            this.lbTitle2.Location = new System.Drawing.Point(60, 26);
             this.lbTitle2.Name = "lbTitle2";
             this.lbTitle2.Size = new System.Drawing.Size(62, 19);
             this.lbTitle2.TabIndex = 1;
@@ -108,17 +108,17 @@
             // 
             this.lbTitle3.AutoSize = true;
             this.lbTitle3.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbTitle3.Location = new System.Drawing.Point(6, 113);
+            this.lbTitle3.Location = new System.Drawing.Point(756, 220);
             this.lbTitle3.Name = "lbTitle3";
-            this.lbTitle3.Size = new System.Drawing.Size(99, 19);
+            this.lbTitle3.Size = new System.Drawing.Size(61, 19);
             this.lbTitle3.TabIndex = 2;
-            this.lbTitle3.Text = "License ID:";
+            this.lbTitle3.Text = "Lic ID:";
             // 
             // lbTitle4
             // 
             this.lbTitle4.AutoSize = true;
             this.lbTitle4.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbTitle4.Location = new System.Drawing.Point(6, 162);
+            this.lbTitle4.Location = new System.Drawing.Point(398, 25);
             this.lbTitle4.Name = "lbTitle4";
             this.lbTitle4.Size = new System.Drawing.Size(111, 19);
             this.lbTitle4.TabIndex = 3;
@@ -128,7 +128,7 @@
             // 
             this.lbTitle5.AutoSize = true;
             this.lbTitle5.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbTitle5.Location = new System.Drawing.Point(43, 217);
+            this.lbTitle5.Location = new System.Drawing.Point(435, 240);
             this.lbTitle5.Name = "lbTitle5";
             this.lbTitle5.Size = new System.Drawing.Size(74, 19);
             this.lbTitle5.TabIndex = 4;
@@ -138,17 +138,17 @@
             // 
             this.lbTitle6.AutoSize = true;
             this.lbTitle6.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbTitle6.Location = new System.Drawing.Point(15, 269);
+            this.lbTitle6.Location = new System.Drawing.Point(21, 137);
             this.lbTitle6.Name = "lbTitle6";
-            this.lbTitle6.Size = new System.Drawing.Size(102, 19);
+            this.lbTitle6.Size = new System.Drawing.Size(97, 19);
             this.lbTitle6.TabIndex = 5;
-            this.lbTitle6.Text = "Issue Date:";
+            this.lbTitle6.Text = "IssueDate:";
             // 
             // lbTitle7
             // 
             this.lbTitle7.AutoSize = true;
             this.lbTitle7.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbTitle7.Location = new System.Drawing.Point(389, 217);
+            this.lbTitle7.Location = new System.Drawing.Point(24, 294);
             this.lbTitle7.Name = "lbTitle7";
             this.lbTitle7.Size = new System.Drawing.Size(123, 19);
             this.lbTitle7.TabIndex = 6;
@@ -158,7 +158,7 @@
             // 
             this.lbTitle8.AutoSize = true;
             this.lbTitle8.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbTitle8.Location = new System.Drawing.Point(15, 320);
+            this.lbTitle8.Location = new System.Drawing.Point(531, 297);
             this.lbTitle8.Name = "lbTitle8";
             this.lbTitle8.Size = new System.Drawing.Size(62, 19);
             this.lbTitle8.TabIndex = 7;
@@ -169,17 +169,17 @@
             this.lbTitle9.AutoSize = true;
             this.lbTitle9.BackColor = System.Drawing.Color.Transparent;
             this.lbTitle9.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbTitle9.Location = new System.Drawing.Point(366, 269);
+            this.lbTitle9.Location = new System.Drawing.Point(23, 242);
             this.lbTitle9.Name = "lbTitle9";
-            this.lbTitle9.Size = new System.Drawing.Size(143, 19);
+            this.lbTitle9.Size = new System.Drawing.Size(94, 19);
             this.lbTitle9.TabIndex = 8;
-            this.lbTitle9.Text = "Expiration Date:";
+            this.lbTitle9.Text = "Exp. Date:";
             // 
             // lbTitle10
             // 
             this.lbTitle10.AutoSize = true;
             this.lbTitle10.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbTitle10.Location = new System.Drawing.Point(423, 113);
+            this.lbTitle10.Location = new System.Drawing.Point(423, 137);
             this.lbTitle10.Name = "lbTitle10";
             this.lbTitle10.Size = new System.Drawing.Size(86, 19);
             this.lbTitle10.TabIndex = 9;
@@ -189,7 +189,7 @@
             // 
             this.lbTitle11.AutoSize = true;
             this.lbTitle11.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbTitle11.Location = new System.Drawing.Point(413, 20);
+            this.lbTitle11.Location = new System.Drawing.Point(18, 190);
             this.lbTitle11.Name = "lbTitle11";
             this.lbTitle11.Size = new System.Drawing.Size(99, 19);
             this.lbTitle11.TabIndex = 10;
@@ -199,7 +199,7 @@
             // 
             this.lbTitle12.AutoSize = true;
             this.lbTitle12.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbTitle12.Location = new System.Drawing.Point(423, 65);
+            this.lbTitle12.Location = new System.Drawing.Point(420, 82);
             this.lbTitle12.Name = "lbTitle12";
             this.lbTitle12.Size = new System.Drawing.Size(89, 19);
             this.lbTitle12.TabIndex = 11;
@@ -209,7 +209,7 @@
             // 
             this.lbTitle13.AutoSize = true;
             this.lbTitle13.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbTitle13.Location = new System.Drawing.Point(403, 165);
+            this.lbTitle13.Location = new System.Drawing.Point(400, 198);
             this.lbTitle13.Name = "lbTitle13";
             this.lbTitle13.Size = new System.Drawing.Size(109, 19);
             this.lbTitle13.TabIndex = 12;
@@ -219,7 +219,7 @@
             // 
             this.lbLicenseClass.AutoSize = true;
             this.lbLicenseClass.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbLicenseClass.Location = new System.Drawing.Point(168, 23);
+            this.lbLicenseClass.Location = new System.Drawing.Point(177, 88);
             this.lbLicenseClass.Name = "lbLicenseClass";
             this.lbLicenseClass.Size = new System.Drawing.Size(127, 16);
             this.lbLicenseClass.TabIndex = 13;
@@ -229,7 +229,7 @@
             // 
             this.lbName.AutoSize = true;
             this.lbName.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbName.Location = new System.Drawing.Point(168, 67);
+            this.lbName.Location = new System.Drawing.Point(177, 29);
             this.lbName.Name = "lbName";
             this.lbName.Size = new System.Drawing.Size(127, 16);
             this.lbName.TabIndex = 14;
@@ -239,17 +239,17 @@
             // 
             this.lbLicenseID.AutoSize = true;
             this.lbLicenseID.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbLicenseID.Location = new System.Drawing.Point(168, 114);
+            this.lbLicenseID.Location = new System.Drawing.Point(859, 223);
             this.lbLicenseID.Name = "lbLicenseID";
-            this.lbLicenseID.Size = new System.Drawing.Size(127, 16);
+            this.lbLicenseID.Size = new System.Drawing.Size(37, 16);
             this.lbLicenseID.TabIndex = 15;
-            this.lbLicenseID.Text = "????????????????????";
+            this.lbLicenseID.Text = "?????";
             // 
             // lbNational_No
             // 
             this.lbNational_No.AutoSize = true;
             this.lbNational_No.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbNational_No.Location = new System.Drawing.Point(168, 165);
+            this.lbNational_No.Location = new System.Drawing.Point(560, 28);
             this.lbNational_No.Name = "lbNational_No";
             this.lbNational_No.Size = new System.Drawing.Size(127, 16);
             this.lbNational_No.TabIndex = 16;
@@ -259,7 +259,7 @@
             // 
             this.lbGender.AutoSize = true;
             this.lbGender.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbGender.Location = new System.Drawing.Point(168, 224);
+            this.lbGender.Location = new System.Drawing.Point(560, 247);
             this.lbGender.Name = "lbGender";
             this.lbGender.Size = new System.Drawing.Size(127, 16);
             this.lbGender.TabIndex = 17;
@@ -269,7 +269,7 @@
             // 
             this.lbIssueDate.AutoSize = true;
             this.lbIssueDate.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbIssueDate.Location = new System.Drawing.Point(168, 272);
+            this.lbIssueDate.Location = new System.Drawing.Point(177, 140);
             this.lbIssueDate.Name = "lbIssueDate";
             this.lbIssueDate.Size = new System.Drawing.Size(127, 16);
             this.lbIssueDate.TabIndex = 18;
@@ -279,7 +279,7 @@
             // 
             this.lbExpirationDate.AutoSize = true;
             this.lbExpirationDate.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbExpirationDate.Location = new System.Drawing.Point(569, 272);
+            this.lbExpirationDate.Location = new System.Drawing.Point(177, 245);
             this.lbExpirationDate.Name = "lbExpirationDate";
             this.lbExpirationDate.Size = new System.Drawing.Size(127, 16);
             this.lbExpirationDate.TabIndex = 19;
@@ -289,7 +289,7 @@
             // 
             this.lbIssueReason.AutoSize = true;
             this.lbIssueReason.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbIssueReason.Location = new System.Drawing.Point(569, 220);
+            this.lbIssueReason.Location = new System.Drawing.Point(207, 297);
             this.lbIssueReason.Name = "lbIssueReason";
             this.lbIssueReason.Size = new System.Drawing.Size(127, 16);
             this.lbIssueReason.TabIndex = 20;
@@ -299,7 +299,7 @@
             // 
             this.lbNotes.AutoSize = true;
             this.lbNotes.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbNotes.Location = new System.Drawing.Point(121, 323);
+            this.lbNotes.Location = new System.Drawing.Point(644, 300);
             this.lbNotes.Name = "lbNotes";
             this.lbNotes.Size = new System.Drawing.Size(127, 16);
             this.lbNotes.TabIndex = 21;
@@ -309,7 +309,7 @@
             // 
             this.lbBirthDate.AutoSize = true;
             this.lbBirthDate.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbBirthDate.Location = new System.Drawing.Point(569, 23);
+            this.lbBirthDate.Location = new System.Drawing.Point(177, 193);
             this.lbBirthDate.Name = "lbBirthDate";
             this.lbBirthDate.Size = new System.Drawing.Size(127, 16);
             this.lbBirthDate.TabIndex = 22;
@@ -319,7 +319,7 @@
             // 
             this.lbDriverID.AutoSize = true;
             this.lbDriverID.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbDriverID.Location = new System.Drawing.Point(569, 67);
+            this.lbDriverID.Location = new System.Drawing.Point(560, 85);
             this.lbDriverID.Name = "lbDriverID";
             this.lbDriverID.Size = new System.Drawing.Size(127, 16);
             this.lbDriverID.TabIndex = 23;
@@ -329,7 +329,7 @@
             // 
             this.lbIsActive.AutoSize = true;
             this.lbIsActive.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbIsActive.Location = new System.Drawing.Point(569, 114);
+            this.lbIsActive.Location = new System.Drawing.Point(560, 140);
             this.lbIsActive.Name = "lbIsActive";
             this.lbIsActive.Size = new System.Drawing.Size(127, 16);
             this.lbIsActive.TabIndex = 27;
@@ -339,7 +339,7 @@
             // 
             this.lbIsDetained.AutoSize = true;
             this.lbIsDetained.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbIsDetained.Location = new System.Drawing.Point(569, 165);
+            this.lbIsDetained.Location = new System.Drawing.Point(560, 198);
             this.lbIsDetained.Name = "lbIsDetained";
             this.lbIsDetained.Size = new System.Drawing.Size(127, 16);
             this.lbIsDetained.TabIndex = 28;
@@ -348,7 +348,7 @@
             // pictureBox11
             // 
             this.pictureBox11.Image = global::Project_DVLD_.Properties.Resources.IsActive32;
-            this.pictureBox11.Location = new System.Drawing.Point(518, 110);
+            this.pictureBox11.Location = new System.Drawing.Point(515, 136);
             this.pictureBox11.Name = "pictureBox11";
             this.pictureBox11.Size = new System.Drawing.Size(32, 32);
             this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -358,7 +358,7 @@
             // pictureBox10
             // 
             this.pictureBox10.Image = global::Project_DVLD_.Properties.Resources.idCard1;
-            this.pictureBox10.Location = new System.Drawing.Point(518, 63);
+            this.pictureBox10.Location = new System.Drawing.Point(515, 80);
             this.pictureBox10.Name = "pictureBox10";
             this.pictureBox10.Size = new System.Drawing.Size(32, 32);
             this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -368,7 +368,7 @@
             // pictureBox9
             // 
             this.pictureBox9.Image = global::Project_DVLD_.Properties.Resources.Notes32;
-            this.pictureBox9.Location = new System.Drawing.Point(83, 317);
+            this.pictureBox9.Location = new System.Drawing.Point(599, 294);
             this.pictureBox9.Name = "pictureBox9";
             this.pictureBox9.Size = new System.Drawing.Size(32, 32);
             this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -378,7 +378,7 @@
             // pictureBox8
             // 
             this.pictureBox8.Image = global::Project_DVLD_.Properties.Resources.calendar2;
-            this.pictureBox8.Location = new System.Drawing.Point(518, 15);
+            this.pictureBox8.Location = new System.Drawing.Point(123, 185);
             this.pictureBox8.Name = "pictureBox8";
             this.pictureBox8.Size = new System.Drawing.Size(32, 32);
             this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -388,7 +388,7 @@
             // pictureBox7
             // 
             this.pictureBox7.Image = global::Project_DVLD_.Properties.Resources.IssueReason32;
-            this.pictureBox7.Location = new System.Drawing.Point(518, 215);
+            this.pictureBox7.Location = new System.Drawing.Point(153, 292);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(32, 32);
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -398,7 +398,7 @@
             // pictureBox6
             // 
             this.pictureBox6.Image = global::Project_DVLD_.Properties.Resources.calendar2;
-            this.pictureBox6.Location = new System.Drawing.Point(124, 265);
+            this.pictureBox6.Location = new System.Drawing.Point(123, 136);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(32, 32);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -408,7 +408,7 @@
             // pictureBox5
             // 
             this.pictureBox5.Image = global::Project_DVLD_.Properties.Resources._32Gender2;
-            this.pictureBox5.Location = new System.Drawing.Point(123, 215);
+            this.pictureBox5.Location = new System.Drawing.Point(515, 238);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(32, 32);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -418,7 +418,7 @@
             // pictureBox4
             // 
             this.pictureBox4.Image = global::Project_DVLD_.Properties.Resources.NationalNumber32;
-            this.pictureBox4.Location = new System.Drawing.Point(123, 160);
+            this.pictureBox4.Location = new System.Drawing.Point(515, 23);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(32, 32);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -428,7 +428,7 @@
             // pictureBox3
             // 
             this.pictureBox3.Image = global::Project_DVLD_.Properties.Resources.idCard1;
-            this.pictureBox3.Location = new System.Drawing.Point(106, 110);
+            this.pictureBox3.Location = new System.Drawing.Point(821, 217);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(32, 32);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -438,7 +438,7 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = global::Project_DVLD_.Properties.Resources.Person32_2;
-            this.pictureBox2.Location = new System.Drawing.Point(106, 63);
+            this.pictureBox2.Location = new System.Drawing.Point(123, 23);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(32, 32);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -448,7 +448,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Project_DVLD_.Properties.Resources.category32;
-            this.pictureBox1.Location = new System.Drawing.Point(106, 15);
+            this.pictureBox1.Location = new System.Drawing.Point(123, 80);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(32, 32);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -467,7 +467,7 @@
             // pictureBox12
             // 
             this.pictureBox12.Image = global::Project_DVLD_.Properties.Resources.IsActive32;
-            this.pictureBox12.Location = new System.Drawing.Point(518, 160);
+            this.pictureBox12.Location = new System.Drawing.Point(515, 193);
             this.pictureBox12.Name = "pictureBox12";
             this.pictureBox12.Size = new System.Drawing.Size(32, 32);
             this.pictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -477,7 +477,7 @@
             // pictureBox13
             // 
             this.pictureBox13.Image = global::Project_DVLD_.Properties.Resources.calendar2;
-            this.pictureBox13.Location = new System.Drawing.Point(515, 265);
+            this.pictureBox13.Location = new System.Drawing.Point(123, 238);
             this.pictureBox13.Name = "pictureBox13";
             this.pictureBox13.Size = new System.Drawing.Size(32, 32);
             this.pictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;

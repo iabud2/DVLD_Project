@@ -30,6 +30,18 @@ namespace Project_DVLD_.Applications
             InitializeComponent();
         }
 
+        public frmReleaseDetainedLicense(int DetainID)
+        {
+            InitializeComponent();
+            _DetainedLicense = clsDetainedLicenses.GetDetainInfo(DetainID);
+            _LicenseID = _DetainedLicense.LicenseID;
+            _SelectedLicense = clsLicenses.GetLicenseInfo(_LicenseID);
+            btnRelease.Enabled = true;
+            gbDetainInfo.Enabled = true;
+            ucFindLicense1.FillData(_LicenseID);
+            LoadDetainInfo();
+        }
+
         private void btnClose_Click(object sender, EventArgs e)
         {
             this.Close();

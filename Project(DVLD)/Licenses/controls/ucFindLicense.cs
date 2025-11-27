@@ -36,6 +36,8 @@ namespace Project_DVLD_.Controls
 
         private void btnSearch_Click(object sender, EventArgs e)
         {
+            if (txtLicenseID.Text == "")
+                return;
             LicenseID = Convert.ToInt32(txtLicenseID.Text);
             if(!clsLicenses.IsExists(LicenseID))
             {
@@ -57,6 +59,16 @@ namespace Project_DVLD_.Controls
                 LicenseSelected(LicenseID);
             }
             
+        }
+
+        public void FillData(int _LicenseID)
+        {
+            this.LicenseID = _LicenseID;
+            this.LicenseInfo = clsLicenses.GetLicenseInfo(this.LicenseID);
+            btnSearch.Enabled = false;
+            txtLicenseID.Text = LicenseID.ToString();
+            txtLicenseID.ReadOnly = true;
+            ucShowLicenseInfo1.LoadInfoByLicenseID(this.LicenseID);
         }
 
         private void txtLicenseID_KeyPress(object sender, KeyPressEventArgs e)

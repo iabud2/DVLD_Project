@@ -93,8 +93,8 @@ namespace DVLD_BusinessLayer.Application
 
         private bool AddNewLDLA()
         {
-            int NewID = Local_DL_ApplicationsDataLayer.AddNew_LDLA(this.ApplicationID, this.LicenseClassID);
-            return (NewID != -1);
+            this.LDLA_ID = Local_DL_ApplicationsDataLayer.AddNew_LDLA(this.ApplicationID, this.LicenseClassID);
+            return (this.LDLA_ID != -1);
         }
 
         private bool UpdateLDLA()

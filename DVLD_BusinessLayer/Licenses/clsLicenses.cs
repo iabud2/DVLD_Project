@@ -84,6 +84,24 @@ namespace DVLD_BusinessLayer.Licenses
             return null;
         }
 
+        static public clsLicenses GetSpecificLicenseForDriver(int DriverID, int LicenseClassID)
+        {
+            int ApplicationID = -1, CreatedBy = -1, LicenseID = -1;
+            DateTime IssueDate = DateTime.Now, ExpirationDate = DateTime.Now;
+            string Notes = "", IssueReason = "";
+            bool IsActive = false;
+            float PaidFees = -1;
+
+            if (LicensesDataLayer.GetSpecificLicenseForDriver(ref LicenseID, ref ApplicationID, DriverID, LicenseClassID, ref IssueDate, ref ExpirationDate, ref Notes,
+                                ref PaidFees, ref IsActive, ref IssueReason, ref CreatedBy))
+            {
+
+                return new clsLicenses(LicenseID, ApplicationID, DriverID, LicenseClassID, IssueDate, ExpirationDate, Notes, PaidFees,
+                                        IsActive, IssueReason, CreatedBy);
+            }
+            return null;
+        }
+
         static public clsLicenses GetActiveLicenseInfo(int LicenseID)
         {
             int ApplicationID = -1, DriverID = -1, LicenseClassID = -1, CreatedBy = -1;
@@ -139,6 +157,16 @@ namespace DVLD_BusinessLayer.Licenses
             return (LicensesDataLayer.LicenseActivation(this.DriverID, isActive));
         }
 
+        static public bool DeactivatePrevious(int LicenseID, int DriverID, int LicenseClassID)
+        {
+            return (LicensesDataLayer.DeactivatePrevious(LicenseID, DriverID, LicenseClassID));
+        }
+
+        public bool DeactivatePrevious()
+        {
+            return (LicensesDataLayer.DeactivatePrevious(this.LicenseID,this.DriverID, this.LicenseClassID));
+        }
+
         private bool _IssueNewLicense()
         {
             this.LicenseID = LicensesDataLayer.IssueNewLicense(this.ApplicationID, this.DriverID, LicenseClassID,
@@ -178,8 +206,6 @@ namespace DVLD_BusinessLayer.Licenses
 
             if (!isLicenseExpired())
                 return null;
-            
-
             Application.ApplicationDate = DateTime.Now;
             Application.PersonID = this.DriverInfo.PersonID;
             Application.ApplicationStatus = clsApplications.enApplicationStatus.New;
@@ -208,7 +234,8 @@ namespace DVLD_BusinessLayer.Licenses
                 return null;
 
             Application.SetComplete();
-            LicenseActivation(this.LicenseID, false);
+            this.LicenseID = NewLicense.LicenseID;
+            NewLicense.DeactivatePrevious();
 
             return NewLicense;       
         }
@@ -251,7 +278,8 @@ namespace DVLD_BusinessLayer.Licenses
                 return null;
 
             Application.SetComplete();
-            LicenseActivation(this.LicenseID, false);
+            this.LicenseID = NewLicense.LicenseID;
+            NewLicense.DeactivatePrevious();
 
             return NewLicense;
         }
@@ -293,8 +321,8 @@ namespace DVLD_BusinessLayer.Licenses
                 return null;
 
             Application.SetComplete();
-            LicenseActivation(this.LicenseID, false);
-
+            this.LicenseID = NewLicense.LicenseID;
+            NewLicense.DeactivatePrevious();
             return NewLicense; 
         }
 

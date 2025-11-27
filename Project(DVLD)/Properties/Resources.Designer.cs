@@ -263,6 +263,16 @@ namespace Project_DVLD_.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap bin {
+            get {
+                object obj = ResourceManager.GetObject("bin", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap calendar2 {
             get {
                 object obj = ResourceManager.GetObject("calendar2", resourceCulture);
@@ -693,6 +703,26 @@ namespace Project_DVLD_.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap licenseInfo {
+            get {
+                object obj = ResourceManager.GetObject("licenseInfo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap licenses {
+            get {
+                object obj = ResourceManager.GetObject("licenses", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap ListPeople128px {
             get {
                 object obj = ResourceManager.GetObject("ListPeople128px", resourceCulture);
@@ -1056,6 +1086,16 @@ namespace Project_DVLD_.Properties {
         internal static System.Drawing.Bitmap reset_password {
             get {
                 object obj = ResourceManager.GetObject("reset-password", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap scheduletest {
+            get {
+                object obj = ResourceManager.GetObject("scheduletest", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

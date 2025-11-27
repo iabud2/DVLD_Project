@@ -138,46 +138,50 @@
             this.showLicenseToolStripMenuItem,
             this.showPersonLicenseHistoryToolStripMenuItem});
             this.cmsLDLA_List.Name = "cmsLDLA_List";
-            this.cmsLDLA_List.Size = new System.Drawing.Size(247, 198);
+            this.cmsLDLA_List.Size = new System.Drawing.Size(251, 230);
             this.cmsLDLA_List.Opening += new System.ComponentModel.CancelEventHandler(this.CheckTestStatus);
             // 
             // showApplicationDetailsToolStripMenuItem
             // 
+            this.showApplicationDetailsToolStripMenuItem.Image = global::Project_DVLD_.Properties.Resources.FindPerson64;
             this.showApplicationDetailsToolStripMenuItem.Name = "showApplicationDetailsToolStripMenuItem";
-            this.showApplicationDetailsToolStripMenuItem.Size = new System.Drawing.Size(246, 22);
+            this.showApplicationDetailsToolStripMenuItem.Size = new System.Drawing.Size(250, 26);
             this.showApplicationDetailsToolStripMenuItem.Text = "&Show Application Details";
             this.showApplicationDetailsToolStripMenuItem.Click += new System.EventHandler(this.showApplicationDetailsToolStripMenuItem_Click);
             // 
             // toolStripMenuItem1
             // 
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(243, 6);
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(247, 6);
             // 
             // editApplicationToolStripMenuItem
             // 
+            this.editApplicationToolStripMenuItem.Image = global::Project_DVLD_.Properties.Resources.EditPerson32px;
             this.editApplicationToolStripMenuItem.Name = "editApplicationToolStripMenuItem";
-            this.editApplicationToolStripMenuItem.Size = new System.Drawing.Size(246, 22);
+            this.editApplicationToolStripMenuItem.Size = new System.Drawing.Size(250, 26);
             this.editApplicationToolStripMenuItem.Text = "&Edit Application";
             this.editApplicationToolStripMenuItem.Click += new System.EventHandler(this.editApplicationToolStripMenuItem_Click);
             // 
             // DeleteApplicationToolStripMenuItem
             // 
+            this.DeleteApplicationToolStripMenuItem.Image = global::Project_DVLD_.Properties.Resources.bin;
             this.DeleteApplicationToolStripMenuItem.Name = "DeleteApplicationToolStripMenuItem";
-            this.DeleteApplicationToolStripMenuItem.Size = new System.Drawing.Size(246, 22);
+            this.DeleteApplicationToolStripMenuItem.Size = new System.Drawing.Size(250, 26);
             this.DeleteApplicationToolStripMenuItem.Text = "&Delete Application";
             this.DeleteApplicationToolStripMenuItem.Click += new System.EventHandler(this.DeleteApplicationToolStripMenuItem_Click);
             // 
             // cancelApplicationToolStripMenuItem
             // 
+            this.cancelApplicationToolStripMenuItem.Image = global::Project_DVLD_.Properties.Resources.xcloseBalck64px;
             this.cancelApplicationToolStripMenuItem.Name = "cancelApplicationToolStripMenuItem";
-            this.cancelApplicationToolStripMenuItem.Size = new System.Drawing.Size(246, 22);
+            this.cancelApplicationToolStripMenuItem.Size = new System.Drawing.Size(250, 26);
             this.cancelApplicationToolStripMenuItem.Text = "Cancel Application";
             this.cancelApplicationToolStripMenuItem.Click += new System.EventHandler(this.cancelApplicationToolStripMenuItem_Click);
             // 
             // toolStripMenuItem2
             // 
             this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(243, 6);
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(247, 6);
             // 
             // sechduleTestToolStripMenuItem
             // 
@@ -185,12 +189,14 @@
             this.sechduleVisionTestToolStripMenuItem,
             this.sechduleWrittenTestToolStripMenuItem,
             this.sechduleStreetTestToolStripMenuItem});
+            this.sechduleTestToolStripMenuItem.Image = global::Project_DVLD_.Properties.Resources.scheduletest;
             this.sechduleTestToolStripMenuItem.Name = "sechduleTestToolStripMenuItem";
-            this.sechduleTestToolStripMenuItem.Size = new System.Drawing.Size(246, 22);
+            this.sechduleTestToolStripMenuItem.Size = new System.Drawing.Size(250, 26);
             this.sechduleTestToolStripMenuItem.Text = "Sechdule &Test";
             // 
             // sechduleVisionTestToolStripMenuItem
             // 
+            this.sechduleVisionTestToolStripMenuItem.Image = global::Project_DVLD_.Properties.Resources.visionTest128;
             this.sechduleVisionTestToolStripMenuItem.Name = "sechduleVisionTestToolStripMenuItem";
             this.sechduleVisionTestToolStripMenuItem.Size = new System.Drawing.Size(188, 22);
             this.sechduleVisionTestToolStripMenuItem.Text = "Sechdule &Vision Test";
@@ -198,6 +204,7 @@
             // 
             // sechduleWrittenTestToolStripMenuItem
             // 
+            this.sechduleWrittenTestToolStripMenuItem.Image = global::Project_DVLD_.Properties.Resources.writtenTest128;
             this.sechduleWrittenTestToolStripMenuItem.Name = "sechduleWrittenTestToolStripMenuItem";
             this.sechduleWrittenTestToolStripMenuItem.Size = new System.Drawing.Size(188, 22);
             this.sechduleWrittenTestToolStripMenuItem.Text = "Sechdule &Written Test";
@@ -205,6 +212,7 @@
             // 
             // sechduleStreetTestToolStripMenuItem
             // 
+            this.sechduleStreetTestToolStripMenuItem.Image = global::Project_DVLD_.Properties.Resources.streetTest128;
             this.sechduleStreetTestToolStripMenuItem.Name = "sechduleStreetTestToolStripMenuItem";
             this.sechduleStreetTestToolStripMenuItem.Size = new System.Drawing.Size(188, 22);
             this.sechduleStreetTestToolStripMenuItem.Text = "Sechdule Str&eet Test";
@@ -213,26 +221,29 @@
             // toolStripMenuItem3
             // 
             this.toolStripMenuItem3.Name = "toolStripMenuItem3";
-            this.toolStripMenuItem3.Size = new System.Drawing.Size(243, 6);
+            this.toolStripMenuItem3.Size = new System.Drawing.Size(247, 6);
             // 
             // issueDrivingLicenseFirstTimeToolStripMenuItem
             // 
+            this.issueDrivingLicenseFirstTimeToolStripMenuItem.Image = global::Project_DVLD_.Properties.Resources.Detain128;
             this.issueDrivingLicenseFirstTimeToolStripMenuItem.Name = "issueDrivingLicenseFirstTimeToolStripMenuItem";
-            this.issueDrivingLicenseFirstTimeToolStripMenuItem.Size = new System.Drawing.Size(246, 22);
+            this.issueDrivingLicenseFirstTimeToolStripMenuItem.Size = new System.Drawing.Size(250, 26);
             this.issueDrivingLicenseFirstTimeToolStripMenuItem.Text = "Issue Driving License (&First Time)";
             this.issueDrivingLicenseFirstTimeToolStripMenuItem.Click += new System.EventHandler(this.issueDrivingLicenseFirstTimeToolStripMenuItem_Click);
             // 
             // showLicenseToolStripMenuItem
             // 
+            this.showLicenseToolStripMenuItem.Image = global::Project_DVLD_.Properties.Resources.licenseInfo;
             this.showLicenseToolStripMenuItem.Name = "showLicenseToolStripMenuItem";
-            this.showLicenseToolStripMenuItem.Size = new System.Drawing.Size(246, 22);
+            this.showLicenseToolStripMenuItem.Size = new System.Drawing.Size(250, 26);
             this.showLicenseToolStripMenuItem.Text = "Show &License";
             this.showLicenseToolStripMenuItem.Click += new System.EventHandler(this.showLicenseToolStripMenuItem_Click);
             // 
             // showPersonLicenseHistoryToolStripMenuItem
             // 
+            this.showPersonLicenseHistoryToolStripMenuItem.Image = global::Project_DVLD_.Properties.Resources.licenses;
             this.showPersonLicenseHistoryToolStripMenuItem.Name = "showPersonLicenseHistoryToolStripMenuItem";
-            this.showPersonLicenseHistoryToolStripMenuItem.Size = new System.Drawing.Size(246, 22);
+            this.showPersonLicenseHistoryToolStripMenuItem.Size = new System.Drawing.Size(250, 26);
             this.showPersonLicenseHistoryToolStripMenuItem.Text = "Show Person License &History";
             this.showPersonLicenseHistoryToolStripMenuItem.Click += new System.EventHandler(this.showPersonLicenseHistoryToolStripMenuItem_Click);
             // 
@@ -288,7 +299,7 @@
             this.cbStatus.FormattingEnabled = true;
             this.cbStatus.Items.AddRange(new object[] {
             "New",
-            "Complete",
+            "Completed",
             "Canceled"});
             this.cbStatus.Location = new System.Drawing.Point(355, 276);
             this.cbStatus.Name = "cbStatus";

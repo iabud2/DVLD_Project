@@ -269,6 +269,34 @@ namespace DVLD_DataAccesLayer.Licenses
             return (EffectedRows > 0);
         }
 
+        static public bool DeactivatePrevious(int NewLicenseID,int DriverID, int LicenseClassID)
+        {
+            int EffectedRows = -1;
+            SqlConnection Connection = new SqlConnection(DVLD_DataAccessSettings.ConnectionString);
+            string Query = @"UPDATE Licenses
+                                SET isActive = 0
+                             WHERE DriverID = @DriverID AND LicenseClassID = @LicenseClassID
+                             AND LicenseID <> @NewLicenseID;";
+            SqlCommand Command = new SqlCommand(Query, Connection);
+            Command.Parameters.AddWithValue("@DriverID", DriverID);
+            Command.Parameters.AddWithValue("@LicenseClassID", LicenseClassID);
+            Command.Parameters.AddWithValue("@NewLicenseID", NewLicenseID);
+            try
+            {
+                Connection.Open();
+                EffectedRows = Command.ExecuteNonQuery();
+            }
+            catch (Exception e)
+            {
+                //Tybe Exception Here
+            }
+            finally
+            {
+                Connection.Close();
+            }
+            return (EffectedRows > 0);
+        }
+
         static public bool DeleteLicense(int LicenseID)
         {
             int EffectedRows = -1;
@@ -380,6 +408,46 @@ namespace DVLD_DataAccesLayer.Licenses
             return dtLicenses;
         }
         
+        static public bool GetSpecificLicenseForDriver(ref int LicenseID, ref int ApplicationID, int DriverID, int LicenseClassID, ref DateTime IssueDate,
+                           ref DateTime ExpirationDate, ref string Notes, ref float PaidFees, ref bool isActive, ref string IssueReason, ref int CreatedBy)
+        {
+            bool isFound = false;
+            SqlConnection Connection = new SqlConnection(DVLD_DataAccessSettings.ConnectionString);
+            string Query = @"SELECT * FROM Licenses
+                                        WHERE DriverID = @DriverID AND LicenseClassID = @LicenseClassID AND isActive = 1";
+            SqlCommand Command = new SqlCommand(Query, Connection);
+            Command.Parameters.AddWithValue("@DriverID", DriverID);
+            Command.Parameters.AddWithValue("@LicenseClassID", LicenseClassID);
+
+            try
+            {
+                Connection.Open();
+                SqlDataReader Reader = Command.ExecuteReader();
+                if (Reader.Read())
+                {
+                    isFound = true;
+                    LicenseID = (int)Reader["LicenseID"];
+                    ApplicationID = (int)Reader["ApplicationID"];
+                    IssueDate = (DateTime)Reader["IssueDate"];
+                    ExpirationDate = (DateTime)Reader["ExpirationDate"];
+                    Notes = Reader["Notes"].ToString();
+                    PaidFees = Convert.ToSingle(Reader["PaidFees"]);
+                    isActive = (bool)Reader["isActive"];
+                    IssueReason = Reader["IssueReason"].ToString();
+                    CreatedBy = (int)Reader["CreatedByUser"];
+                }
+                Reader.Close();
+            }
+            catch (Exception ex)
+            {
+                //Exception Here!.
+            }
+            finally
+            {
+                Connection.Close();
+            }
+            return isFound;
+        }
         static public DataTable GetLicensesListForDriverID(int DriverID)
         {
             DataTable dtLicenses = new DataTable();

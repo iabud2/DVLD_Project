@@ -138,6 +138,14 @@ namespace DVLD_BusinessLayer.Licenses
             return true;
         }
 
+        public bool isDetained()
+        {
+            return (DetainedLicensesDataLayer.IsDetained(this.LicenseID));
+        }
+        static public bool isDetained(int LicenseID)
+        {
+            return (DetainedLicensesDataLayer.IsDetained(LicenseID));
+        }
         public bool DetainLicense()
         {
             this.DetainDate = DateTime.Now;

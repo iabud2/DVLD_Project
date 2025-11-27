@@ -129,7 +129,7 @@ namespace DVLD_DataAccesLayer.Licenses
             string Query = @"SELECT * FROM DetainedLicenses
                                 WHERE DetainID = @DetainID";
             SqlCommand Command = new SqlCommand(Query, Connection);
-            Command.Parameters.AddWithValue("@DetianID", DetainID);
+            Command.Parameters.AddWithValue("@DetainID", DetainID);
 
             try
             {

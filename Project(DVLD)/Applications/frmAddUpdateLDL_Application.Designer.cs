@@ -266,7 +266,7 @@
             this.Name = "frmAddUpdateLDL_Application";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Local Driving License Application";
-            this.Load += new System.EventHandler(this.frmAddUpdateLDL_Apllication_Load);
+            this.Load += new System.EventHandler(this.frmAddUpdateLDL_Application_Load);
             this.tcLDLA.ResumeLayout(false);
             this.tpPersonalInfo.ResumeLayout(false);
             this.tpApplicationInfo.ResumeLayout(false);

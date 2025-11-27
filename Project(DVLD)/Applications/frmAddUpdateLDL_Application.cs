@@ -149,6 +149,7 @@ namespace Project_DVLD_.Applications
             {
                 Mode = enMode.Update;
                 lbTitle.Text = "Update Local Driving License Application";
+                lbLDLA_ID.Text = LDL_Application.LDLA_ID.ToString();
                 this.Text = lbTitle.Text;
                 MessageBox.Show("Application Added Successfully", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 
@@ -189,7 +190,7 @@ namespace Project_DVLD_.Applications
 
             return true;
         }
-        private void frmAddUpdateLDL_Apllication_Load(object sender, EventArgs e)
+        private void frmAddUpdateLDL_Application_Load(object sender, EventArgs e)
         {
             _ResetDefaultValues();
             if(Mode == enMode.Update)

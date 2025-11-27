@@ -72,6 +72,7 @@
             this.txtSearch.TabIndex = 2;
             this.txtSearch.Visible = false;
             this.txtSearch.TextChanged += new System.EventHandler(this.txtSearch_TextChanged);
+            this.txtSearch.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtSearch_KeyPress);
             // 
             // cbFilterBy
             // 
@@ -155,10 +156,11 @@
             this.toolStripMenuItem1,
             this.releaseLicenseToolStripMenuItem});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(226, 98);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(226, 120);
             // 
             // showPersonInfoToolStripMenuItem
             // 
+            this.showPersonInfoToolStripMenuItem.Image = global::Project_DVLD_.Properties.Resources.Details32px;
             this.showPersonInfoToolStripMenuItem.Name = "showPersonInfoToolStripMenuItem";
             this.showPersonInfoToolStripMenuItem.Size = new System.Drawing.Size(225, 22);
             this.showPersonInfoToolStripMenuItem.Text = "Show &Person Details";
@@ -166,6 +168,7 @@
             // 
             // shoeLicenseDetailesToolStripMenuItem
             // 
+            this.shoeLicenseDetailesToolStripMenuItem.Image = global::Project_DVLD_.Properties.Resources.licenseInfo;
             this.shoeLicenseDetailesToolStripMenuItem.Name = "shoeLicenseDetailesToolStripMenuItem";
             this.shoeLicenseDetailesToolStripMenuItem.Size = new System.Drawing.Size(225, 22);
             this.shoeLicenseDetailesToolStripMenuItem.Text = "Show &License Details";
@@ -173,6 +176,7 @@
             // 
             // showPersonLicenseHistoryToolStripMenuItem
             // 
+            this.showPersonLicenseHistoryToolStripMenuItem.Image = global::Project_DVLD_.Properties.Resources.licenses;
             this.showPersonLicenseHistoryToolStripMenuItem.Name = "showPersonLicenseHistoryToolStripMenuItem";
             this.showPersonLicenseHistoryToolStripMenuItem.Size = new System.Drawing.Size(225, 22);
             this.showPersonLicenseHistoryToolStripMenuItem.Text = "Show Person License &History";

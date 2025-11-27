@@ -163,12 +163,12 @@ namespace Project_DVLD_
             if(FilterColumn == "PersonID")
             {
                 _People.DefaultView.RowFilter = string.Format("[{0}] = {1}", FilterColumn, tbSearch.Text.Trim());
-                lbRecords.Text = _People.Rows.Count.ToString();
+                lbRecords.Text = dgvPeopleList.Rows.Count.ToString();
             }
             else
             {
                 _People.DefaultView.RowFilter = string.Format("[{0}] LIKE '{1}%'", FilterColumn, tbSearch.Text.Trim());
-                lbRecords.Text = _People.Rows.Count.ToString();
+                lbRecords.Text = dgvPeopleList.Rows.Count.ToString();
             }
 
                 
@@ -176,9 +176,13 @@ namespace Project_DVLD_
 
         private void tbSearch_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if(cbFilterBy.Text == "PersonID")
+            if(cbFilterBy.Text == "PersonID" || cbFilterBy.Text == "Phone")
             {
                 e.Handled = (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar));
+            }
+            if(cbFilterBy.Text == "Country")
+            {
+                e.Handled = (!char.IsControl(e.KeyChar) && !char.IsLetter(e.KeyChar) && !char.IsWhiteSpace(e.KeyChar));
             }
         }
 
@@ -201,12 +205,12 @@ namespace Project_DVLD_
             if(cbGendor.Text == "Male")
             {
                 _People.DefaultView.RowFilter = string.Format("[{0}] LIKE '{1}%'", Filter, cbGendor.Text);
-                lbRecords.Text = _People.Rows.Count.ToString();
+                lbRecords.Text = dgvPeopleList.Rows.Count.ToString();
             }
             else
             {
                 _People.DefaultView.RowFilter = string.Format("[{0}] LIKE '{1}%'", Filter, cbGendor.Text);
-                lbRecords.Text = _People.Rows.Count.ToString();
+                lbRecords.Text = dgvPeopleList.Rows.Count.ToString();
             }
 
 

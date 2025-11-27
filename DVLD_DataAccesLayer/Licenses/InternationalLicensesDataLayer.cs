@@ -50,7 +50,7 @@ namespace DVLD_DataAccesLayer.Licenses
             SqlConnection Connection = new SqlConnection(DVLD_DataAccessSettings.ConnectionString);
             string Query = @"SELECT InternationalLicenseID, ApplicationID, LocalLicenseID, IssueDate, ExpirationDate, IsActive
                                 FROM InternationalLicenses 
-                                    WHERE DriverID = DriverID;";
+                                    WHERE DriverID = @DriverID;";
             SqlCommand Command = new SqlCommand(Query, Connection);
             Command.Parameters.AddWithValue("@DriverID", DriverID);
 
@@ -372,7 +372,7 @@ namespace DVLD_DataAccesLayer.Licenses
             return isFound;
         }
 
-        public static bool isDriverHaveAcive_IL(int DriverID)
+        public static bool isDriverHaveActive_IL(int DriverID)
         {
             bool isFound = false;
             SqlConnection Connection = new SqlConnection(DVLD_DataAccessSettings.ConnectionString);

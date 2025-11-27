@@ -20,6 +20,29 @@ namespace Project_DVLD_.Controls
             InitializeComponent();
         }
 
+        private string WrapTextByWords(string text, int maxCharsPerLine)
+        {
+            string[] words = text.Split(' ');
+            List<string> lines = new List<string>();
+            string currentLine = "";
+
+            foreach (string word in words)
+            {
+                if ((currentLine + word).Length > maxCharsPerLine)
+                {
+                    lines.Add(currentLine.Trim());
+                    currentLine = "";
+                }
+
+                currentLine += word + " ";
+            }
+
+            if (!string.IsNullOrWhiteSpace(currentLine))
+                lines.Add(currentLine.Trim());
+
+            return string.Join("\n", lines);
+        }
+
         public void LoadInfoByApplicationID(int ApplicationID)
         {
             clsLicenses license = clsLicenses.GetLicensesInfoByAppID(ApplicationID);
@@ -28,7 +51,7 @@ namespace Project_DVLD_.Controls
             lbLicenseClass.Text = clsLicenseClasses.Find(license.LicenseClassID).ClassName;
             lbName.Text = Person.FullName;
             lbLicenseID.Text = license.LicenseID.ToString();
-            lbNational_No.Text = lbName.Text = Person.NationalNo;
+            lbNational_No.Text = Person.NationalNo;
             
             if (Person.Gendor == 0)
                 lbGender.Text = "Female";
@@ -36,9 +59,12 @@ namespace Project_DVLD_.Controls
                 lbGender.Text = "Male";
 
             lbIssueDate.Text = license.IssueDate.ToString();
-            lbIssueReason.Text = license.IssueReason;
-            lbExpirationDate.Text = license.ExpirationDate.ToString();  
-            lbNotes.Text = license.Notes;
+            lbIssueReason.Text = WrapTextByWords(license.IssueReason, 50);
+            lbExpirationDate.Text = license.ExpirationDate.ToString();
+            if (license.Notes != "")
+                lbNotes.Text = WrapTextByWords(license.Notes, 50);
+            else
+                lbNotes.Text = "N/A";
             lbBirthDate.Text =Person.DateOfBirth.ToString();
             lbDriverID.Text = license.DriverID.ToString();
             
@@ -64,7 +90,7 @@ namespace Project_DVLD_.Controls
             lbLicenseClass.Text = clsLicenseClasses.Find(license.LicenseClassID).ClassName;
             lbName.Text = Person.FullName;
             lbLicenseID.Text = license.LicenseID.ToString();
-            lbNational_No.Text = lbName.Text = Person.NationalNo;
+            lbNational_No.Text = Person.NationalNo;
 
             if (Person.Gendor == 0)
                 lbGender.Text = "Female";
@@ -72,9 +98,13 @@ namespace Project_DVLD_.Controls
                 lbGender.Text = "Male";
 
             lbIssueDate.Text = license.IssueDate.ToString();
-            lbIssueReason.Text = license.IssueReason;
+            lbIssueReason.Text = WrapTextByWords(license.IssueReason, 50);
             lbExpirationDate.Text = license.ExpirationDate.ToString();
-            lbNotes.Text = license.Notes;
+
+            if(license.Notes != "")
+                lbNotes.Text = WrapTextByWords(license.Notes, 50);
+            else
+                lbNotes.Text = "N/A";
             lbBirthDate.Text = Person.DateOfBirth.ToString();
             lbDriverID.Text = license.DriverID.ToString();
 

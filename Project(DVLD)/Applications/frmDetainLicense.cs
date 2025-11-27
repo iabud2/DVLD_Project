@@ -73,6 +73,11 @@ namespace Project_DVLD_.Applications
 
         private void btnDetain_Click(object sender, EventArgs e)
         {
+            if(txtFineFees.Text==string.Empty)
+            {
+                MessageBox.Show("Please Enter Fine Fees To Detain License", "Required Field", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
             Detain();
         }
 

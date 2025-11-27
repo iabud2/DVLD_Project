@@ -32,6 +32,16 @@ namespace Project_DVLD_.Applications
             OldLicense = clsLicenses.GetLicenseInfo(SelectedLicenseID);
             lblShowLicenseHistory.Enabled = true;
 
+            if (!OldLicense.IsActive)
+            {
+                MessageBox.Show($"License With ID : {OldLicense.LicenseID} Not Active.", "Not Active!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                btnIssue.Enabled = false;
+                gbApplicationInfo.Enabled = false;
+                gbApplicationType.Enabled = false;
+                return;
+            }
+
+
             if (OldLicense.isLicenseExpired())
             {
                 MessageBox.Show($"Selected License Is Expired!", "Expired!", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -41,15 +51,7 @@ namespace Project_DVLD_.Applications
                 return;
             }
 
-            if (OldLicense.IsActive == false)
-            {
-                MessageBox.Show($"License With ID : {OldLicense.LicenseID} Not Active.", "Not Active!", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                btnIssue.Enabled = false;
-                gbApplicationInfo.Enabled = false;
-                gbApplicationType.Enabled = false;
-                return;
-            }
-
+  
             btnIssue.Enabled = true;
             gbApplicationInfo.Enabled = true;
             gbApplicationType.Enabled = true;
@@ -75,8 +77,8 @@ namespace Project_DVLD_.Applications
                     return;
                 }
             }
-
-            OldLicense.LicenseActivation(false);
+            
+            btnIssue.Enabled = false;
             lbRenewApplicationID.Text = NewLicense.ApplicationID.ToString();
             lbExpiredLicenseID.Text = OldLicense.ApplicationID.ToString();
             lbApplicationDate.Text = DateTime.Now.ToString();

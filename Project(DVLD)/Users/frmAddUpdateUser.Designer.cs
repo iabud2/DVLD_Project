@@ -68,7 +68,7 @@
             this.lbFormTitle.BackColor = System.Drawing.Color.Transparent;
             this.lbFormTitle.Font = new System.Drawing.Font("Tahoma", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbFormTitle.ForeColor = System.Drawing.Color.Black;
-            this.lbFormTitle.Location = new System.Drawing.Point(447, 9);
+            this.lbFormTitle.Location = new System.Drawing.Point(450, 20);
             this.lbFormTitle.Name = "lbFormTitle";
             this.lbFormTitle.Size = new System.Drawing.Size(325, 58);
             this.lbFormTitle.TabIndex = 0;
@@ -117,6 +117,7 @@
             // ucFindPerson1
             // 
             this.ucFindPerson1.AddNewEnabled = true;
+            this.ucFindPerson1.BackColor = System.Drawing.Color.WhiteSmoke;
             this.ucFindPerson1.FilterEnabled = true;
             this.ucFindPerson1.Location = new System.Drawing.Point(7, 0);
             this.ucFindPerson1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
