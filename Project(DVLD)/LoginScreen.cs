@@ -1,5 +1,6 @@
 ﻿using DVLD_BusinessLayer;
 using DVLD_BusinessLayer.GeneralClasses;
+using Microsoft.Win32;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -48,17 +49,47 @@ namespace Project_DVLD_
             return true;
         }
 
+
+        private void StoreLoginInfo()
+        {
+            string ErrorMessage = "";   
+            clsGlobal.StoreLoginInfo(tbUserName.Text.Trim(), tbPassword.Text.Trim(), ref ErrorMessage);
+            if (ErrorMessage != "")
+            {
+                MessageBox.Show("Error!, Can't save login Info! : " + ErrorMessage, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private bool RetrieveLoginInfo(string username, string password)
+        {
+            string ErrorMessage = "";
+            bool LoginInfo = clsGlobal.GetLoginInfo(ref username, ref password, ref ErrorMessage);
+            if (!LoginInfo)
+            {
+                MessageBox.Show("Error!, Can't retrieve login Info! : " + ErrorMessage, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return false;
+            }
+            tbUserName.Text = username;
+            tbPassword.Text = password;
+            return true;
+        }
+
+
+
+
+
         private void btnLogin_Click(object sender, EventArgs e)
         {
             if (Login())
             {
                 if (cbRememberMe.Checked == true)
                 {
-                    clsGlobal.RememberLoginInfo(tbUserName.Text.Trim(), tbPassword.Text.Trim());
+                    StoreLoginInfo();
+                  //  clsGlobal.RememberLoginInfo(tbUserName.Text.Trim(), tbPassword.Text.Trim());
                 }
                 else
                 {
-                    clsGlobal.RememberLoginInfo("", "");
+                    clsGlobal.DeleteLoginInfo();
                 }
             }
             else
@@ -71,6 +102,13 @@ namespace Project_DVLD_
         {
             string username = "", password = "";
 
+
+            if (RetrieveLoginInfo(username, password))
+                cbRememberMe.Checked = true;
+            else
+                cbRememberMe.Checked = false;
+
+            /*/
             if(clsGlobal.RestoreLoginInfo(ref username, ref password))
             {
                 tbUserName.Text = username;
@@ -81,6 +119,7 @@ namespace Project_DVLD_
             {
                 cbRememberMe.Checked = false;
             }
+            /*/
         }
     }
 }

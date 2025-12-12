@@ -3,30 +3,11 @@
   "WorkspaceRootPath": "C:\\Users\\iabud\\Desktop\\me\\c#\\Course19(Project(DVLD))\\Project(DVLD)\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{67631C81-F325-4555-A45A-A22CC1208AAA}|..\\DVLD_DataAccesLayer\\DVLD_DataAccessLayer.csproj|c:\\users\\iabud\\desktop\\me\\c#\\course19(project(dvld))\\dvld_dataacceslayer\\licenses\\licensesdatalayer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{38C9963E-6836-4BD5-AB29-44BE69DB2540}|Project(DVLD).csproj|c:\\users\\iabud\\desktop\\me\\c#\\course19(project(dvld))\\project(dvld)\\loginscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38C9963E-6836-4BD5-AB29-44BE69DB2540}|Project(DVLD).csproj|solutionrelative:loginscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{54284E5B-0896-4D65-9DCD-01E7C8BDED4A}|..\\DVLD_BusinessLayer\\DVLD_BusinessLayer.csproj|c:\\users\\iabud\\desktop\\me\\c#\\course19(project(dvld))\\dvld_businesslayer\\licenses\\clsinternationallicenses.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{38C9963E-6836-4BD5-AB29-44BE69DB2540}|Project(DVLD).csproj|c:\\users\\iabud\\desktop\\me\\c#\\course19(project(dvld))\\project(dvld)\\licenses\\frmissueinternationallicense.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{38C9963E-6836-4BD5-AB29-44BE69DB2540}|Project(DVLD).csproj|solutionrelative:licenses\\frmissueinternationallicense.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{38C9963E-6836-4BD5-AB29-44BE69DB2540}|Project(DVLD).csproj|c:\\users\\iabud\\desktop\\me\\c#\\course19(project(dvld))\\project(dvld)\\drivers\\frmdriverslist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{38C9963E-6836-4BD5-AB29-44BE69DB2540}|Project(DVLD).csproj|solutionrelative:drivers\\frmdriverslist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{38C9963E-6836-4BD5-AB29-44BE69DB2540}|Project(DVLD).csproj|c:\\users\\iabud\\desktop\\me\\c#\\course19(project(dvld))\\project(dvld)\\licenses\\controls\\ucfindlicense.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{38C9963E-6836-4BD5-AB29-44BE69DB2540}|Project(DVLD).csproj|solutionrelative:licenses\\controls\\ucfindlicense.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{38C9963E-6836-4BD5-AB29-44BE69DB2540}|Project(DVLD).csproj|c:\\users\\iabud\\desktop\\me\\c#\\course19(project(dvld))\\project(dvld)\\licenses\\frmissueinternationallicense.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{38C9963E-6836-4BD5-AB29-44BE69DB2540}|Project(DVLD).csproj|solutionrelative:licenses\\frmissueinternationallicense.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{38C9963E-6836-4BD5-AB29-44BE69DB2540}|Project(DVLD).csproj|c:\\users\\iabud\\desktop\\me\\c#\\course19(project(dvld))\\project(dvld)\\drivers\\frmdriverslist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{38C9963E-6836-4BD5-AB29-44BE69DB2540}|Project(DVLD).csproj|solutionrelative:drivers\\frmdriverslist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{54284E5B-0896-4D65-9DCD-01E7C8BDED4A}|..\\DVLD_BusinessLayer\\DVLD_BusinessLayer.csproj|c:\\users\\iabud\\desktop\\me\\c#\\course19(project(dvld))\\dvld_businesslayer\\generalclasses\\clsglobal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -36,7 +17,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -48,92 +29,29 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ucFindLicense.cs",
-              "DocumentMoniker": "C:\\Users\\iabud\\Desktop\\me\\c#\\Course19(Project(DVLD))\\Project(DVLD)\\Licenses\\controls\\ucFindLicense.cs",
-              "RelativeDocumentMoniker": "Licenses\\controls\\ucFindLicense.cs",
-              "ToolTip": "C:\\Users\\iabud\\Desktop\\me\\c#\\Course19(Project(DVLD))\\Project(DVLD)\\Licenses\\controls\\ucFindLicense.cs",
-              "RelativeToolTip": "Licenses\\controls\\ucFindLicense.cs",
-              "ViewState": "AgIAAC0AAAAAAAAAAAAqwEIAAABKAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-27T01:33:09.717Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "LicensesDataLayer.cs",
-              "DocumentMoniker": "C:\\Users\\iabud\\Desktop\\me\\c#\\Course19(Project(DVLD))\\DVLD_DataAccesLayer\\Licenses\\LicensesDataLayer.cs",
-              "RelativeDocumentMoniker": "..\\DVLD_DataAccesLayer\\Licenses\\LicensesDataLayer.cs",
-              "ToolTip": "C:\\Users\\iabud\\Desktop\\me\\c#\\Course19(Project(DVLD))\\DVLD_DataAccesLayer\\Licenses\\LicensesDataLayer.cs",
-              "RelativeToolTip": "..\\DVLD_DataAccesLayer\\Licenses\\LicensesDataLayer.cs",
-              "ViewState": "AgIAAJcBAAAAAAAAAAAqwKkBAAAiAAAAAAAAAA==",
+              "Title": "LoginScreen.cs",
+              "DocumentMoniker": "C:\\Users\\iabud\\Desktop\\me\\c#\\Course19(Project(DVLD))\\Project(DVLD)\\LoginScreen.cs",
+              "RelativeDocumentMoniker": "LoginScreen.cs",
+              "ToolTip": "C:\\Users\\iabud\\Desktop\\me\\c#\\Course19(Project(DVLD))\\Project(DVLD)\\LoginScreen.cs",
+              "RelativeToolTip": "LoginScreen.cs",
+              "ViewState": "AgIAAGUAAAAAAAAAAAAqwH0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-27T01:22:32.94Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "frmIssueInternationalLicense.cs",
-              "DocumentMoniker": "C:\\Users\\iabud\\Desktop\\me\\c#\\Course19(Project(DVLD))\\Project(DVLD)\\Licenses\\frmIssueInternationalLicense.cs",
-              "RelativeDocumentMoniker": "Licenses\\frmIssueInternationalLicense.cs",
-              "ToolTip": "C:\\Users\\iabud\\Desktop\\me\\c#\\Course19(Project(DVLD))\\Project(DVLD)\\Licenses\\frmIssueInternationalLicense.cs",
-              "RelativeToolTip": "Licenses\\frmIssueInternationalLicense.cs",
-              "ViewState": "AgIAADoAAAAAAAAAAADgv0MAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-27T01:18:04.339Z",
+              "WhenOpened": "2025-12-12T01:46:46.489Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "clsInternationalLicenses.cs",
-              "DocumentMoniker": "C:\\Users\\iabud\\Desktop\\me\\c#\\Course19(Project(DVLD))\\DVLD_BusinessLayer\\Licenses\\clsInternationalLicenses.cs",
-              "RelativeDocumentMoniker": "..\\DVLD_BusinessLayer\\Licenses\\clsInternationalLicenses.cs",
-              "ToolTip": "C:\\Users\\iabud\\Desktop\\me\\c#\\Course19(Project(DVLD))\\DVLD_BusinessLayer\\Licenses\\clsInternationalLicenses.cs",
-              "RelativeToolTip": "..\\DVLD_BusinessLayer\\Licenses\\clsInternationalLicenses.cs",
-              "ViewState": "AgIAAKsAAAAAAAAAAADgv7UAAAAMAAAAAAAAAA==",
+              "Title": "clsGlobal.cs",
+              "DocumentMoniker": "C:\\Users\\iabud\\Desktop\\me\\c#\\Course19(Project(DVLD))\\DVLD_BusinessLayer\\GeneralClasses\\clsGlobal.cs",
+              "RelativeDocumentMoniker": "..\\DVLD_BusinessLayer\\GeneralClasses\\clsGlobal.cs",
+              "ToolTip": "C:\\Users\\iabud\\Desktop\\me\\c#\\Course19(Project(DVLD))\\DVLD_BusinessLayer\\GeneralClasses\\clsGlobal.cs",
+              "RelativeToolTip": "..\\DVLD_BusinessLayer\\GeneralClasses\\clsGlobal.cs",
+              "ViewState": "AgIAAFQAAAAAAAAAAAAwwHAAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-27T00:59:30.44Z",
+              "WhenOpened": "2025-12-12T01:42:30.536Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "frmIssueInternationalLicense.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\iabud\\Desktop\\me\\c#\\Course19(Project(DVLD))\\Project(DVLD)\\Licenses\\frmIssueInternationalLicense.cs",
-              "RelativeDocumentMoniker": "Licenses\\frmIssueInternationalLicense.cs",
-              "ToolTip": "C:\\Users\\iabud\\Desktop\\me\\c#\\Course19(Project(DVLD))\\Project(DVLD)\\Licenses\\frmIssueInternationalLicense.cs [Design]",
-              "RelativeToolTip": "Licenses\\frmIssueInternationalLicense.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-27T00:54:13.63Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "frmDriversList.cs",
-              "DocumentMoniker": "C:\\Users\\iabud\\Desktop\\me\\c#\\Course19(Project(DVLD))\\Project(DVLD)\\Drivers\\frmDriversList.cs",
-              "RelativeDocumentMoniker": "Drivers\\frmDriversList.cs",
-              "ToolTip": "C:\\Users\\iabud\\Desktop\\me\\c#\\Course19(Project(DVLD))\\Project(DVLD)\\Drivers\\frmDriversList.cs",
-              "RelativeToolTip": "Drivers\\frmDriversList.cs",
-              "ViewState": "AgIAAGEAAAAAAAAAAAAswHQAAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-26T23:43:42.213Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "frmDriversList.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\iabud\\Desktop\\me\\c#\\Course19(Project(DVLD))\\Project(DVLD)\\Drivers\\frmDriversList.cs",
-              "RelativeDocumentMoniker": "Drivers\\frmDriversList.cs",
-              "ToolTip": "C:\\Users\\iabud\\Desktop\\me\\c#\\Course19(Project(DVLD))\\Project(DVLD)\\Drivers\\frmDriversList.cs [Design]",
-              "RelativeToolTip": "Drivers\\frmDriversList.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-26T23:43:38.738Z",
-              "EditorCaption": " [Design]"
             }
           ]
         }
