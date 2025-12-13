@@ -1,18 +1,19 @@
-﻿using Project_DVLD_.People;
+﻿using DVLD_BusinessLayer.GeneralClasses;
+using Project_DVLD_.Applications;
+using Project_DVLD_.Licenses;
+using Project_DVLD_.People;
+using Project_DVLD_.Tests;
+using Project_DVLD_.Users;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Project_DVLD_.Users;
-using DVLD_BusinessLayer.GeneralClasses;
-using Project_DVLD_.Applications;
-using Project_DVLD_.Tests;
-using Project_DVLD_.Licenses;
 namespace Project_DVLD_ 
 {
     public partial class frmMainScreen : Form
@@ -42,11 +43,22 @@ namespace Project_DVLD_
             lbUserName.Text = "User: " + clsGlobal.CurrentUserLogedin.GetFirstName();
         }
 
+        private void Record_A_LogOut()
+        {
+            string SourceName = "DVLD_MainScreen";
+            if (!EventLog.SourceExists(SourceName))
+            {
+                EventLog.CreateEventSource(SourceName, "Application");
+            }
+            EventLog.WriteEntry(SourceName, "User " + clsGlobal.CurrentUserLogedin.UserName + " logged Out at " + DateTime.Now.ToString(), EventLogEntryType.Information);
+        }
+
 
 
 
         private void logOutToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            Record_A_LogOut();
             clsGlobal.CurrentUserLogedin = null;
             _frmLogin.Show();
             this.Close();

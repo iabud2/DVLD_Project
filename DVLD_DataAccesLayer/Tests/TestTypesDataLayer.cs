@@ -39,8 +39,10 @@ namespace DVLD_DataAccesLayer.Tests
                 }
                 reader.Close();
             }
-            catch (Exception ex) 
+            catch (Exception e)
             {
+                string SourceName = "DVLD_TestTypesDL";
+                DVLD_DataAccessSettings.LogExceptions(SourceName, e);
                 isFound = false;
             }
             finally
@@ -68,9 +70,10 @@ namespace DVLD_DataAccesLayer.Tests
                 }
                 reader.Close();
             }
-            catch (Exception ex) 
+            catch (Exception e)
             {
-
+                string SourceName = "DVLD_TestTypesDL";
+                DVLD_DataAccessSettings.LogExceptions(SourceName, e);
             }
             finally
             {
@@ -105,7 +108,8 @@ namespace DVLD_DataAccesLayer.Tests
             }
             catch (Exception e)
             {
-
+                string SourceName = "DVLD_TestTypesDL";
+                DVLD_DataAccessSettings.LogExceptions(SourceName, e);
             }
             finally
             {
@@ -114,15 +118,6 @@ namespace DVLD_DataAccesLayer.Tests
 
             return ID;
         }
-
-
-
-
-
-
-
-
-
 
 
         static public bool UpdateTestTYpe(int ID, string Title, string Description, float Fees)
@@ -145,9 +140,10 @@ namespace DVLD_DataAccesLayer.Tests
                 connection.Open();
                 EffectedRows = command.ExecuteNonQuery();
             }
-            catch (Exception ex)
+            catch (Exception e)
             {
-                    
+                string SourceName = "DVLD_TestTypesDL";
+                DVLD_DataAccessSettings.LogExceptions(SourceName, e);
             }
             finally
             {
@@ -177,9 +173,10 @@ namespace DVLD_DataAccesLayer.Tests
                 connection.Open();
                 EffectedRows = command.ExecuteNonQuery();
             }
-            catch(Exception ex) 
+            catch (Exception e)
             {
-
+                string SourceName = "DVLD_TestTypesDL";
+                DVLD_DataAccessSettings.LogExceptions(SourceName, e);
             }
             finally
             {
@@ -189,11 +186,5 @@ namespace DVLD_DataAccesLayer.Tests
 
             return (EffectedRows > 0);
         }
-
-
-
-
-
-
     }
 }

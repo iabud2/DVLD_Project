@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Data.SqlClient;
+using System.Diagnostics;
 using System.Dynamic;
 using System.Linq;
 using System.Text;
@@ -12,8 +13,10 @@ namespace DVLD_DataAccesLayer.Drivers
 {
     static public class DriversDataLayer
     {
-       //this is the data access layer for table 
-       //Columns : 1-DriverID, 2-PersonID, 3-CreatedByUser, 4-CreatedDate.
+        //this is the data access layer for table 
+        //Columns : 1-DriverID, 2-PersonID, 3-CreatedByUser, 4-CreatedDate.
+
+
 
         static public bool GetDriverInfo(int DriverID, ref int PersonID, ref int CreatedByUser, ref DateTime CreatedDate)
         {
@@ -36,9 +39,10 @@ namespace DVLD_DataAccesLayer.Drivers
                 }
                 Reader.Close();
             }
-            catch (Exception ex) 
+            catch (Exception e) 
             {
-                //Tybe Exception Here.
+                string SourceName = "DVLD_DriversDL";
+                DVLD_DataAccessSettings.LogExceptions(SourceName, e);
             }
             finally
             {
@@ -70,9 +74,10 @@ namespace DVLD_DataAccesLayer.Drivers
                 }
                 Reader.Close();
             }
-            catch (Exception ex) 
+            catch (Exception e) 
             {
-                //Exception Here.
+                string SourceName = "DVLD_DriversDL";
+                DVLD_DataAccessSettings.LogExceptions(SourceName, e);
             }
             finally
             {
@@ -98,9 +103,10 @@ namespace DVLD_DataAccesLayer.Drivers
                 }
                 Reader.Close();
             }
-            catch (Exception ex) 
+            catch (Exception e) 
             {
-                //Tybe Exception Here.
+                string SourceName = "DVLD_DriversDL";
+                DVLD_DataAccessSettings.LogExceptions(SourceName, e);
             }
             finally
             {
@@ -134,9 +140,10 @@ namespace DVLD_DataAccesLayer.Drivers
                     NewID = InsertedID;
                 }
             }
-            catch (Exception ex) 
+            catch (Exception e) 
             {
-                //Tybe Exception Here.
+                string SourceName = "DVLD_DriversDL";
+                DVLD_DataAccessSettings.LogExceptions(SourceName, e);
             }
             finally
             {
@@ -166,9 +173,10 @@ namespace DVLD_DataAccesLayer.Drivers
                 Connection.Open();
                 EffectedRows = Command.ExecuteNonQuery();
             }
-            catch (Exception ex) 
+            catch (Exception e) 
             {
-                //Type Exception Here.
+                string SourceName = "DVLD_DriversDL";
+                DVLD_DataAccessSettings.LogExceptions(SourceName, e);
             }
             finally
             {
@@ -192,9 +200,10 @@ namespace DVLD_DataAccesLayer.Drivers
                 Connection.Open();
                 EffectedRows = Command.ExecuteNonQuery();
             }
-            catch (Exception ex)
+            catch (Exception e)
             {
-                //Type Exception Here.
+                string SourceName = "DVLD_DriversDL";
+                DVLD_DataAccessSettings.LogExceptions(SourceName, e);
             }
             finally
             {
@@ -220,9 +229,10 @@ namespace DVLD_DataAccesLayer.Drivers
                 isFound = Reader.HasRows;
                 Reader.Close();
             }
-            catch (Exception ex) 
+            catch (Exception e) 
             {
-                //Tybe Exception Here.
+                string SourceName = "DVLD_DriversDL";
+                DVLD_DataAccessSettings.LogExceptions(SourceName, e);
             }
             finally
             {
@@ -248,9 +258,10 @@ namespace DVLD_DataAccesLayer.Drivers
                 isFound = Reader.HasRows;
                 Reader.Close();
             }
-            catch (Exception ex)
+            catch (Exception e)
             {
-                //Tybe Exception Here.
+                string SourceName = "DVLD_DriversDL";
+                DVLD_DataAccessSettings.LogExceptions(SourceName, e);
             }
             finally
             {

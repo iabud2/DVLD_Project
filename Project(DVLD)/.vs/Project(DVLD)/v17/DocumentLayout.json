@@ -1,10 +1,14 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\iabud\\Desktop\\me\\c#\\Course19(Project(DVLD))\\Project(DVLD)\\",
+  "WorkspaceRootPath": "C:\\Users\\iabud\\Desktop\\me\\projects\\Course19(Project(DVLD))\\Project(DVLD)\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{38C9963E-6836-4BD5-AB29-44BE69DB2540}|Project(DVLD).csproj|c:\\users\\iabud\\desktop\\me\\c#\\course19(project(dvld))\\project(dvld)\\loginscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{38C9963E-6836-4BD5-AB29-44BE69DB2540}|Project(DVLD).csproj|solutionrelative:loginscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{38C9963E-6836-4BD5-AB29-44BE69DB2540}|Project(DVLD).csproj|c:\\users\\iabud\\desktop\\me\\projects\\course19(project(dvld))\\project(dvld)\\frmmainscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{38C9963E-6836-4BD5-AB29-44BE69DB2540}|Project(DVLD).csproj|solutionrelative:frmmainscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38C9963E-6836-4BD5-AB29-44BE69DB2540}|Project(DVLD).csproj|C:\\Users\\iabud\\Desktop\\me\\projects\\Course19(Project(DVLD))\\Project(DVLD)\\frmmainscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38C9963E-6836-4BD5-AB29-44BE69DB2540}|Project(DVLD).csproj|solutionrelative:frmmainscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -27,15 +31,26 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "LoginScreen.cs",
-              "DocumentMoniker": "C:\\Users\\iabud\\Desktop\\me\\c#\\Course19(Project(DVLD))\\Project(DVLD)\\LoginScreen.cs",
-              "RelativeDocumentMoniker": "LoginScreen.cs",
-              "ToolTip": "C:\\Users\\iabud\\Desktop\\me\\c#\\Course19(Project(DVLD))\\Project(DVLD)\\LoginScreen.cs",
-              "RelativeToolTip": "LoginScreen.cs",
-              "ViewState": "AgIAAFcAAAAAAAAAAAAiwFsAAAAmAAAAAAAAAA==",
+              "Title": "frmMainScreen.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\iabud\\Desktop\\me\\projects\\Course19(Project(DVLD))\\Project(DVLD)\\frmMainScreen.cs",
+              "RelativeDocumentMoniker": "frmMainScreen.cs",
+              "ToolTip": "C:\\Users\\iabud\\Desktop\\me\\projects\\Course19(Project(DVLD))\\Project(DVLD)\\frmMainScreen.cs [Design]",
+              "RelativeToolTip": "frmMainScreen.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-12T01:46:46.489Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-13T05:48:46.09Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "frmMainScreen.cs",
+              "DocumentMoniker": "C:\\Users\\iabud\\Desktop\\me\\projects\\Course19(Project(DVLD))\\Project(DVLD)\\frmMainScreen.cs",
+              "RelativeDocumentMoniker": "frmMainScreen.cs",
+              "ToolTip": "C:\\Users\\iabud\\Desktop\\me\\projects\\Course19(Project(DVLD))\\Project(DVLD)\\frmMainScreen.cs",
+              "RelativeToolTip": "frmMainScreen.cs",
+              "ViewState": "AgIAACQAAAAAAAAAAAAmwEUAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-13T05:46:25.48Z"
             }
           ]
         }

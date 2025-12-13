@@ -57,8 +57,10 @@ namespace DVLD_DataAccesLayer
                 }
                 Reader.Close(); 
             }
-            catch (Exception ex) 
+            catch (Exception e) 
             {
+                string SourceName = "DVLD_PeopleDL";
+                DVLD_DataAccessSettings.LogExceptions(SourceName, e);
                 isFound = false;
             }
             finally
@@ -123,8 +125,10 @@ namespace DVLD_DataAccesLayer
                 }
                 Reader.Close();
             }
-            catch (Exception ex) 
+            catch (Exception e)
             {
+                string SourceName = "DVLD_DriversDL";
+                DVLD_DataAccessSettings.LogExceptions(SourceName, e);
                 IsFound = false;
             }
             finally 
@@ -190,8 +194,10 @@ namespace DVLD_DataAccesLayer
                 }
                 Reader.Close();
             }
-            catch (Exception ex)
+            catch (Exception e)
             {
+                string SourceName = "DVLD_DriversDL";
+                DVLD_DataAccessSettings.LogExceptions(SourceName, e);
                 IsFound = false;
             }
             finally
@@ -257,8 +263,10 @@ namespace DVLD_DataAccesLayer
                 }
                 Reader.Close();
             }
-            catch (Exception ex)
+            catch (Exception e)
             {
+                string SourceName = "DVLD_DriversDL";
+                DVLD_DataAccessSettings.LogExceptions(SourceName, e);
                 IsFound = false;
             }
             finally
@@ -320,8 +328,10 @@ namespace DVLD_DataAccesLayer
                 }
                 Reader.Close();
             }
-            catch (Exception ex)
+            catch (Exception e)
             {
+                string SourceName = "DVLD_DriversDL";
+                DVLD_DataAccessSettings.LogExceptions(SourceName, e);
                 IsFound = false;
             }
             finally
@@ -387,8 +397,10 @@ namespace DVLD_DataAccesLayer
                 }
                 Reader.Close();
             }
-            catch (Exception ex)
+            catch (Exception e)
             {
+                string SourceName = "DVLD_DriversDL";
+                DVLD_DataAccessSettings.LogExceptions(SourceName, e);
                 IsFound = false;
             }
             finally
@@ -453,8 +465,10 @@ namespace DVLD_DataAccesLayer
                 }
                 Reader.Close();
             }
-            catch (Exception ex)
+            catch (Exception e)
             {
+                string SourceName = "DVLD_DriversDL";
+                DVLD_DataAccessSettings.LogExceptions(SourceName, e);
                 IsFound = false;
             }
             finally
@@ -519,8 +533,10 @@ namespace DVLD_DataAccesLayer
                 }
                 Reader.Close();
             }
-            catch (Exception ex)
+            catch (Exception e)
             {
+                string SourceName = "DVLD_DriversDL";
+                DVLD_DataAccessSettings.LogExceptions(SourceName, e);
                 IsFound = false;
             }
             finally
@@ -585,8 +601,10 @@ namespace DVLD_DataAccesLayer
                 }
                 Reader.Close();
             }
-            catch (Exception ex)
+            catch (Exception e)
             {
+                string SourceName = "DVLD_DriversDL";
+                DVLD_DataAccessSettings.LogExceptions(SourceName, e);
                 IsFound = false;
             }
             finally
@@ -648,8 +666,10 @@ namespace DVLD_DataAccesLayer
                 }
                 Reader.Close();
             }
-            catch (Exception ex)
+            catch (Exception e)
             {
+                string SourceName = "DVLD_DriversDL";
+                DVLD_DataAccessSettings.LogExceptions(SourceName, e);
                 IsFound = false;
             }
             finally
@@ -681,8 +701,10 @@ namespace DVLD_DataAccesLayer
                 EffectedRows = command.ExecuteNonQuery();
           
             }
-            catch(Exception ex) 
+            catch(Exception e)
             {
+                string SourceName = "DVLD_DriversDL";
+                DVLD_DataAccessSettings.LogExceptions(SourceName, e);
                 EffectedRows = 0;
             }
             finally
@@ -752,9 +774,10 @@ namespace DVLD_DataAccesLayer
 
                 EffectedRows = command.ExecuteNonQuery();
             }
-            catch(Exception ex) 
+            catch(Exception e) 
             {
-
+                string SourceName = "DVLD_DriversDL";
+                DVLD_DataAccessSettings.LogExceptions(SourceName, e);
             }
             finally
             {
@@ -819,9 +842,10 @@ namespace DVLD_DataAccesLayer
                     PersonID = InsertedID;
                 }
             }
-            catch (Exception ex)
+            catch (Exception e)
             {
-
+                string SourceName = "DVLD_DriversDL";
+                DVLD_DataAccessSettings.LogExceptions(SourceName, e);
             }
             finally
             {
@@ -830,7 +854,6 @@ namespace DVLD_DataAccesLayer
 
             return PersonID;
         }
-
 
         public static bool IsPersonExist(int PersonID)
         {
@@ -892,10 +915,6 @@ namespace DVLD_DataAccesLayer
             return isFound;
         }
 
-
-
-
-
         public static DataTable GetPeopleList()
         {
             DataTable dt = new DataTable();
@@ -926,8 +945,10 @@ namespace DVLD_DataAccesLayer
                 }
                 Reader.Close();
             }
-            catch (Exception ex) 
+            catch (Exception e)
             {
+                string SourceName = "DVLD_DriversDL";
+                DVLD_DataAccessSettings.LogExceptions(SourceName, e);
                 return null;
             }
             finally

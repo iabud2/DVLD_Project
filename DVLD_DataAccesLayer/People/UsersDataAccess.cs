@@ -34,8 +34,10 @@ namespace DVLD_DataAccesLayer.People
                 }
                 reader.Close();
             }
-            catch(Exception ex)
+            catch(Exception e)
             {
+                string SourceName = "DVLD_UsersDL";
+                DVLD_DataAccessSettings.LogExceptions(SourceName, e);
                 return null;
             }
             finally
@@ -75,9 +77,10 @@ namespace DVLD_DataAccesLayer.People
                 }
                 reader.Close();
             }
-            catch(Exception ex) 
+            catch(Exception e) 
             {
-                isFound = false;
+                string SourceName = "DVLD_UsersDL";
+                DVLD_DataAccessSettings.LogExceptions(SourceName, e);
             }
             finally 
             {
@@ -116,9 +119,10 @@ namespace DVLD_DataAccesLayer.People
                 }
                 reader.Close();
             }
-            catch (Exception ex)
+            catch (Exception e)
             {
-                isFound = false;
+                string SourceName = "DVLD_UsersDL";
+                DVLD_DataAccessSettings.LogExceptions(SourceName, e);
             }
             finally
             {
@@ -158,9 +162,10 @@ namespace DVLD_DataAccesLayer.People
                     UserID = InsertedID;
                 }
             }
-            catch (Exception ex) 
+            catch (Exception e)
             {
-                
+                string SourceName = "DVLD_UsersDL";
+                DVLD_DataAccessSettings.LogExceptions(SourceName, e);
             }
             finally
             {
@@ -196,9 +201,10 @@ namespace DVLD_DataAccesLayer.People
                 connection.Open();
                 EffectedRows = command.ExecuteNonQuery();
             }
-            catch (Exception ex) 
+            catch (Exception e)
             {
-                
+                string SourceName = "DVLD_UsersDL";
+                DVLD_DataAccessSettings.LogExceptions(SourceName, e);
             }
             finally
             {
@@ -226,9 +232,10 @@ namespace DVLD_DataAccesLayer.People
                 connection.Open();
                 EffectedRows = command.ExecuteNonQuery();
             }
-            catch (Exception ex) 
+            catch (Exception e)
             {
-
+                string SourceName = "DVLD_UsersDL";
+                DVLD_DataAccessSettings.LogExceptions(SourceName, e);
             }
             finally
             {
@@ -257,8 +264,10 @@ namespace DVLD_DataAccesLayer.People
                 isFound = reader.HasRows;
                 reader.Close();
             }
-            catch
+            catch (Exception e)
             {
+                string SourceName = "DVLD_UsersDL";
+                DVLD_DataAccessSettings.LogExceptions(SourceName, e);
                 isFound = false;
             }
             finally
@@ -287,8 +296,10 @@ namespace DVLD_DataAccesLayer.People
                 isFound = reader.HasRows;
                 reader.Close();
             }
-            catch
+            catch (Exception e)
             {
+                string SourceName = "DVLD_UsersDL";
+                DVLD_DataAccessSettings.LogExceptions(SourceName, e);
                 isFound = false;
             }
             finally
@@ -317,8 +328,10 @@ namespace DVLD_DataAccesLayer.People
                 isFound = reader.HasRows;
                 reader.Close();
             }
-            catch
+            catch (Exception e)
             {
+                string SourceName = "DVLD_UsersDL";
+                DVLD_DataAccessSettings.LogExceptions(SourceName, e);
                 isFound = false;
             }
             finally

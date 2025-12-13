@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -36,9 +37,10 @@ namespace DVLD_DataAccesLayer.Applications
                 }
 
             }
-            catch(Exception ex) 
+            catch(Exception e) 
             {
-                
+                string SourceName = "DVLD_ApplicationTypesDL";
+                DVLD_DataAccessSettings.LogExceptions(SourceName, e);
             }
             finally
             {
@@ -47,7 +49,7 @@ namespace DVLD_DataAccesLayer.Applications
             return NewID;
         }
         
-        public static bool GetApplictionTypeInfo(int ApplicationID, ref string ApplicationName, ref float ApplicationFees)
+        public static bool GetApplicationTypeInfo(int ApplicationID, ref string ApplicationName, ref float ApplicationFees)
         {
             bool isFound = false;
             SqlConnection conn = new SqlConnection(DVLD_DataAccessSettings.ConnectionString);
@@ -72,8 +74,10 @@ namespace DVLD_DataAccesLayer.Applications
 
                 reader.Close();
             }
-            catch(Exception ex)
+            catch(Exception e)
             {
+                string SourceName = "DVLD_ApplicationTypesDL";
+                DVLD_DataAccessSettings.LogExceptions(SourceName, e);
                 isFound = false;
             }
             finally
@@ -101,10 +105,11 @@ namespace DVLD_DataAccesLayer.Applications
                 }
                 reader.Close();
             }
-            catch (Exception ex)
+            catch (Exception e)
             {
+                string SourceName = "DVLD_ApplicationTypesDL";
+                DVLD_DataAccessSettings.LogExceptions(SourceName, e);
                 return null;
-
             }
             finally
             {
@@ -134,8 +139,10 @@ namespace DVLD_DataAccesLayer.Applications
                 effectedRows = cmd.ExecuteNonQuery();
 
             }
-            catch (Exception ex) 
+            catch (Exception e) 
             {
+                string SourceName = "DVLD_ApplicationTypesDL";
+                DVLD_DataAccessSettings.LogExceptions(SourceName, e);
                 return false;
             }
             finally
@@ -162,8 +169,10 @@ namespace DVLD_DataAccesLayer.Applications
                 effectedRows = cmd.ExecuteNonQuery();
 
             }
-            catch (Exception ex)
+            catch (Exception e)
             {
+                string SourceName = "DVLD_ApplicationTypesDL";
+                DVLD_DataAccessSettings.LogExceptions(SourceName, e);
                 return false;
             }
             finally
@@ -174,8 +183,6 @@ namespace DVLD_DataAccesLayer.Applications
             return (effectedRows > 0);
         }
 
-
     }
-
 
 }

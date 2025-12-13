@@ -10,6 +10,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Diagnostics;
+
+
 namespace Project_DVLD_
 {
     public partial class LoginScreen : Form
@@ -21,7 +24,12 @@ namespace Project_DVLD_
 
         private void btnClose_Click(object sender, EventArgs e)
         {
-            this.Close();
+            if (cbRememberMe.Checked == false)
+                clsGlobal.DeleteLoginInfo();
+            else
+                StoreLoginInfo();
+            
+                this.Close();
         }
 
         private bool Login()
@@ -75,7 +83,15 @@ namespace Project_DVLD_
         }
 
 
-
+        private void Record_A_Login()
+        {
+            string SourceName = "DVLD_LoginScreen";
+            if (!EventLog.SourceExists(SourceName))
+            {
+                EventLog.CreateEventSource(SourceName, "Application");
+            }
+            EventLog.WriteEntry(SourceName, "User " + tbUserName.Text + " logged in at " + DateTime.Now.ToString(), EventLogEntryType.Information);
+        }
 
 
         private void btnLogin_Click(object sender, EventArgs e)
@@ -91,6 +107,7 @@ namespace Project_DVLD_
                 {
                     clsGlobal.DeleteLoginInfo();
                 }
+                Record_A_Login();
             }
             else
             {
@@ -101,12 +118,7 @@ namespace Project_DVLD_
         private void LoginScreen_Load(object sender, EventArgs e)
         {
             string username = "", password = "";
-
-
-            if (RetrieveLoginInfo(username, password))
-                cbRememberMe.Checked = true;
-            else
-                cbRememberMe.Checked = false;
+            cbRememberMe.Checked = RetrieveLoginInfo(username, password); 
 
             /*/
             if(clsGlobal.RestoreLoginInfo(ref username, ref password))

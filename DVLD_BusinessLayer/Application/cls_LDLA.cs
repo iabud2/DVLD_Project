@@ -78,7 +78,7 @@ namespace DVLD_BusinessLayer.Application
         static public cls_LDLA GetLDLAInfo_ByApplicationID(int applicationID)
         {
             int ldlaID = -1, licenseClassID = -1;
-            bool isFound = Local_DL_ApplicationsDataLayer.GetLDLA_ByApplicationiD(ref ldlaID, applicationID, ref licenseClassID);
+            bool isFound = Local_DL_ApplicationsDataLayer.GetLDLA_ByApplicationID(ref ldlaID, applicationID, ref licenseClassID);
 
             if(isFound)
             {

@@ -29,6 +29,10 @@ namespace Project_DVLD_.Applications
         {
             _dtApplicationTypes = clsApplicationTypes.GetApplicationTypesList();
             dgvApplicationTypes.DataSource = _dtApplicationTypes;
+            lbRecords.Text = dgvApplicationTypes.Rows.Count.ToString()+ " Application Type(s)";
+
+            if (_dtApplicationTypes.Rows.Count == 0)
+                return;
 
             dgvApplicationTypes.Columns[0].HeaderText = "ID";
             dgvApplicationTypes.Columns[0].Width = 100;
@@ -39,7 +43,6 @@ namespace Project_DVLD_.Applications
             dgvApplicationTypes.Columns[2].HeaderText = "Fees";
             dgvApplicationTypes.Columns[2].Width = 100;
 
-            lbRecords.Text = dgvApplicationTypes.Rows.Count.ToString()+ " Application Type(s)";
         }
 
 

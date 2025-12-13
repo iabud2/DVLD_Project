@@ -37,9 +37,10 @@ namespace DVLD_DataAccesLayer.Licenses
                 }
                 reader.Close();
             }
-            catch (Exception ex) 
+            catch (Exception e)
             {
-
+                string SourceName = "DVLD_LicenseClassesDL";
+                DVLD_DataAccessSettings.LogExceptions(SourceName, e);
             }
             finally
             {
@@ -76,7 +77,8 @@ namespace DVLD_DataAccesLayer.Licenses
             }
             catch (Exception e)
             {
-                //Type Your Exception.
+                string SourceName = "DVLD_LicenseClassesDL";
+                DVLD_DataAccessSettings.LogExceptions(SourceName, e);
             }
             finally
             {
@@ -84,8 +86,6 @@ namespace DVLD_DataAccesLayer.Licenses
             }
             return isFound;
         }
-
-
 
         static public DataTable ListLicenseClasses() 
         { 
@@ -104,9 +104,10 @@ namespace DVLD_DataAccesLayer.Licenses
                 }
                 reader.Close();
             }
-            catch(Exception ex) 
+            catch (Exception e)
             {
-
+                string SourceName = "DVLD_LicenseClassesDL";
+                DVLD_DataAccessSettings.LogExceptions(SourceName, e);
             }
             finally
             {
@@ -141,9 +142,10 @@ namespace DVLD_DataAccesLayer.Licenses
                     NewID = insertedID;
                 }
             }
-            catch (Exception ex) 
+            catch (Exception e)
             {
-
+                string SourceName = "DVLD_LicenseClassesDL";
+                DVLD_DataAccessSettings.LogExceptions(SourceName, e);
             }
             finally
             {
@@ -181,9 +183,10 @@ namespace DVLD_DataAccesLayer.Licenses
                 connection.Open();
                 EffectedRows = command.ExecuteNonQuery();
             }
-            catch(Exception e)
+            catch (Exception e)
             {
-
+                string SourceName = "DVLD_LicenseClassesDL";
+                DVLD_DataAccessSettings.LogExceptions(SourceName, e);
             }
             finally
             {
@@ -211,7 +214,8 @@ namespace DVLD_DataAccesLayer.Licenses
             }
             catch (Exception e)
             {
-
+                string SourceName = "DVLD_LicenseClassesDL";
+                DVLD_DataAccessSettings.LogExceptions(SourceName, e);
             }
             finally
             {

@@ -37,9 +37,10 @@ namespace DVLD_DataAccesLayer.Tests
                 }
                 reader.Close();
             }
-            catch (Exception ex) 
+            catch (Exception e)
             {
-
+                string SourceName = "DVLD_TestsDL";
+                DVLD_DataAccessSettings.LogExceptions(SourceName, e);
             }
             finally
             {
@@ -72,9 +73,10 @@ namespace DVLD_DataAccesLayer.Tests
                 }
                 reader.Close();
             }
-            catch (Exception e) 
+            catch (Exception e)
             {
-                //Type Your Exception Here.
+                string SourceName = "DVLD_TestsDL";
+                DVLD_DataAccessSettings.LogExceptions(SourceName, e);
             }
             finally
             {
@@ -99,9 +101,10 @@ namespace DVLD_DataAccesLayer.Tests
                 }
                 reader.Close();
             }
-            catch(Exception e)
+            catch (Exception e)
             {
-                
+                string SourceName = "DVLD_TestsDL";
+                DVLD_DataAccessSettings.LogExceptions(SourceName, e);
             }
             finally
             {
@@ -138,8 +141,10 @@ namespace DVLD_DataAccesLayer.Tests
                     NewID = insertedID;
                 }
             }
-            catch(Exception e) 
+            catch (Exception e)
             {
+                string SourceName = "DVLD_TestsDL";
+                DVLD_DataAccessSettings.LogExceptions(SourceName, e);
             }
             finally
             {
@@ -171,9 +176,10 @@ namespace DVLD_DataAccesLayer.Tests
                 Connection.Open();
                 EffectedRows = Command.ExecuteNonQuery();
             }
-            catch(Exception e) 
+            catch (Exception e)
             {
-
+                string SourceName = "DVLD_TestsDL";
+                DVLD_DataAccessSettings.LogExceptions(SourceName, e);
             }
             finally
             {
@@ -199,7 +205,8 @@ namespace DVLD_DataAccesLayer.Tests
             }
             catch (Exception e)
             {
-
+                string SourceName = "DVLD_TestsDL";
+                DVLD_DataAccessSettings.LogExceptions(SourceName, e);
             }
             finally
             {
@@ -208,10 +215,6 @@ namespace DVLD_DataAccesLayer.Tests
 
             return (EffectedRows > 0);
         }
-
-
-
-
 
     }
 }

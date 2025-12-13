@@ -34,8 +34,10 @@ namespace DVLD_DataAccesLayer
                 }
                 Reader.Close();
             }
-            catch (Exception ex) 
+            catch (Exception e) 
             {
+                string SourceName = "DVLD_CountriesDL";
+                DVLD_DataAccessSettings.LogExceptions(SourceName, e);
                 isFound = false;
             }
             finally
@@ -70,8 +72,10 @@ namespace DVLD_DataAccesLayer
                 }
                 Reader.Close();
             }
-            catch (Exception ex)
+            catch (Exception e)
             {
+                string SourceName = "DVLD_CountriesDL";
+                DVLD_DataAccessSettings.LogExceptions(SourceName, e);
                 isFound = false;
             }
             finally
@@ -100,8 +104,10 @@ namespace DVLD_DataAccesLayer
                 }
                 reader.Close();
             }
-            catch(Exception ex)
+            catch (Exception e)
             {
+                string SourceName = "DVLD_CountriesDL";
+                DVLD_DataAccessSettings.LogExceptions(SourceName, e);
                 return null;
             }
             finally

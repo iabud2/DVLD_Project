@@ -40,9 +40,10 @@ namespace DVLD_DataAccesLayer.Tests
                 }
                 reader.Close();
             }
-            catch (Exception ex)
+            catch (Exception e)
             {
-
+                string SourceName = "DVLD_TestsAppointmentsDL";
+                DVLD_DataAccessSettings.LogExceptions(SourceName, e);
             }
             finally
             {
@@ -73,7 +74,8 @@ namespace DVLD_DataAccesLayer.Tests
             }
             catch (Exception e)
             {
-                //Handle you exceptions here.
+                string SourceName = "DVLD_TestsAppointmentsDL";
+                DVLD_DataAccessSettings.LogExceptions(SourceName, e);
             }
             finally
             {
@@ -105,7 +107,8 @@ namespace DVLD_DataAccesLayer.Tests
             }
             catch (Exception e)
             {
-                //Tybe Exception Here.
+                string SourceName = "DVLD_TestsAppointmentsDL";
+                DVLD_DataAccessSettings.LogExceptions(SourceName, e);
             }
             finally
             {
@@ -133,7 +136,8 @@ namespace DVLD_DataAccesLayer.Tests
             }
             catch (Exception e)
             {
-
+                string SourceName = "DVLD_TestsAppointmentsDL";
+                DVLD_DataAccessSettings.LogExceptions(SourceName, e);
             }
             finally
             {
@@ -174,6 +178,8 @@ namespace DVLD_DataAccesLayer.Tests
             }
             catch (Exception e)
             {
+                string SourceName = "DVLD_TestsAppointmentsDL";
+                DVLD_DataAccessSettings.LogExceptions(SourceName, e);
             }
             finally
             {
@@ -213,7 +219,8 @@ namespace DVLD_DataAccesLayer.Tests
             }
             catch (Exception e)
             {
-
+                string SourceName = "DVLD_TestsAppointmentsDL";
+                DVLD_DataAccessSettings.LogExceptions(SourceName, e);
             }
             finally
             {
@@ -239,7 +246,8 @@ namespace DVLD_DataAccesLayer.Tests
             }
             catch (Exception e)
             {
-
+                string SourceName = "DVLD_TestsAppointmentsDL";
+                DVLD_DataAccessSettings.LogExceptions(SourceName, e);
             }
             finally
             {
@@ -266,7 +274,8 @@ namespace DVLD_DataAccesLayer.Tests
             }
             catch (Exception e)
             {
-                //Tybe Exception Here.            }
+                string SourceName = "DVLD_TestsAppointmentsDL";
+                DVLD_DataAccessSettings.LogExceptions(SourceName, e);
             }
             finally 
             {

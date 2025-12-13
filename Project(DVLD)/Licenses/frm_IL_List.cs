@@ -29,6 +29,14 @@ namespace Project_DVLD_.Applications
         {
             dgvInternationalLicenses.DataSource = dtInternationalLicenses;
             lbRecords.Text = dgvInternationalLicenses.Rows.Count.ToString() + " Record(s)";
+
+            if(dtInternationalLicenses.Rows.Count == 0)
+            {
+                return;
+            }
+
+
+
             dgvInternationalLicenses.Columns[0].Width = 150;
             dgvInternationalLicenses.Columns[1].Width = 100;
             dgvInternationalLicenses.Columns[2].Width = 75;

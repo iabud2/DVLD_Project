@@ -44,9 +44,10 @@ namespace DVLD_DataAccesLayer.Licenses
                 }
                 Reader.Close();
             }
-            catch (Exception ex)
+            catch (Exception e)
             {
-                //Tybe Exception Here.
+                string SourceName = "DVLD_LicensesDL";
+                DVLD_DataAccessSettings.LogExceptions(SourceName, e);
             }
             finally
             {
@@ -87,9 +88,10 @@ namespace DVLD_DataAccesLayer.Licenses
                 }
                 Reader.Close();
             }
-            catch (Exception ex)
+            catch (Exception e)
             {
-                //Tybe Exception Here.
+                string SourceName = "DVLD_LicensesDL";
+                DVLD_DataAccessSettings.LogExceptions(SourceName, e);
             }
             finally
             {
@@ -99,6 +101,7 @@ namespace DVLD_DataAccesLayer.Licenses
             return isFound;
 
         }
+     
         static public bool GetLicenseInfoByApp_ID(ref int LicenseID, int ApplicationID, ref int DriverID, ref int LicenseClassID, ref DateTime IssueDate, 
                            ref DateTime ExpirationDate, ref string Notes, ref float PaidFees, ref bool isActive, ref string IssueReason, ref int CreatedBy)
         {
@@ -129,9 +132,10 @@ namespace DVLD_DataAccesLayer.Licenses
                 }
                 Reader.Close();
             }
-            catch (Exception ex) 
+            catch (Exception e) 
             {
-                //Exception Here!.
+                string SourceName = "DVLD_LicensesDL";
+                DVLD_DataAccessSettings.LogExceptions(SourceName, e);
             }
             finally
             {
@@ -182,9 +186,10 @@ namespace DVLD_DataAccesLayer.Licenses
                     NewID = InsertedID;
                 }
             }
-            catch (Exception ex)
+            catch (Exception e)
             {
-                //Tybe Exception Here.
+                string SourceName = "DVLD_LicensesDL";
+                DVLD_DataAccessSettings.LogExceptions(SourceName, e);
             }
             finally
             {
@@ -230,9 +235,10 @@ namespace DVLD_DataAccesLayer.Licenses
                 Connection.Open();
                 EffectedRows = Command.ExecuteNonQuery();
             }
-            catch (Exception ex)
+            catch (Exception e)
             {
-                //Tybe Exception Here.
+                string SourceName = "DVLD_LicensesDL";
+                DVLD_DataAccessSettings.LogExceptions(SourceName, e);
             }
             finally
             {
@@ -259,7 +265,8 @@ namespace DVLD_DataAccesLayer.Licenses
             }
             catch (Exception e)
             {
-                //Tybe Exception Here
+                string SourceName = "DVLD_LicensesDL";
+                DVLD_DataAccessSettings.LogExceptions(SourceName, e);
             }
             finally
             {
@@ -288,7 +295,8 @@ namespace DVLD_DataAccesLayer.Licenses
             }
             catch (Exception e)
             {
-                //Tybe Exception Here
+                string SourceName = "DVLD_LicensesDL";
+                DVLD_DataAccessSettings.LogExceptions(SourceName, e);
             }
             finally
             {
@@ -313,7 +321,8 @@ namespace DVLD_DataAccesLayer.Licenses
             }
             catch (Exception e)
             {
-                //Tybe Exception Here
+                string SourceName = "DVLD_LicensesDL";
+                DVLD_DataAccessSettings.LogExceptions(SourceName, e);
             }
             finally
             {
@@ -341,7 +350,8 @@ namespace DVLD_DataAccesLayer.Licenses
             }
             catch (Exception e)
             {
-                //Tybe Exception Here
+                string SourceName = "DVLD_LicensesDL";
+                DVLD_DataAccessSettings.LogExceptions(SourceName, e);
             }
             finally
             {
@@ -371,7 +381,8 @@ namespace DVLD_DataAccesLayer.Licenses
             }
             catch(Exception e) 
             {
-                //Exception Here.
+                string SourceName = "DVLD_LicensesDL";
+                DVLD_DataAccessSettings.LogExceptions(SourceName, e);
             }
             finally
             {
@@ -379,6 +390,7 @@ namespace DVLD_DataAccesLayer.Licenses
             }
             return isFound;
         }
+   
         static public DataTable ListAllLicenses()
         {
             DataTable dtLicenses = new DataTable();
@@ -398,7 +410,8 @@ namespace DVLD_DataAccesLayer.Licenses
             }
             catch (Exception e)
             {
-                //Tybe Exception Here
+                string SourceName = "DVLD_LicensesDL";
+                DVLD_DataAccessSettings.LogExceptions(SourceName, e);
             }
             finally
             {
@@ -438,9 +451,10 @@ namespace DVLD_DataAccesLayer.Licenses
                 }
                 Reader.Close();
             }
-            catch (Exception ex)
+            catch (Exception e)
             {
-                //Exception Here!.
+                string SourceName = "DVLD_LicensesDL";
+                DVLD_DataAccessSettings.LogExceptions(SourceName, e);
             }
             finally
             {
@@ -448,6 +462,7 @@ namespace DVLD_DataAccesLayer.Licenses
             }
             return isFound;
         }
+    
         static public DataTable GetLicensesListForDriverID(int DriverID)
         {
             DataTable dtLicenses = new DataTable();
@@ -471,7 +486,8 @@ namespace DVLD_DataAccesLayer.Licenses
             }
             catch (Exception e)
             {
-                //Exception Here.
+                string SourceName = "DVLD_LicensesDL";
+                DVLD_DataAccessSettings.LogExceptions(SourceName, e);
             }
             finally 
             { 
@@ -502,7 +518,8 @@ namespace DVLD_DataAccesLayer.Licenses
             }
             catch (Exception e) 
             {
-                //Tybe Exception Here.
+                string SourceName = "DVLD_LicensesDL";
+                DVLD_DataAccessSettings.LogExceptions(SourceName, e);
             }
             finally
             {
@@ -531,7 +548,8 @@ namespace DVLD_DataAccesLayer.Licenses
             }
             catch (Exception e)
             {
-                //Type Exception Here!
+                string SourceName = "DVLD_LicensesDL";
+                DVLD_DataAccessSettings.LogExceptions(SourceName, e);
             }
             finally
             {

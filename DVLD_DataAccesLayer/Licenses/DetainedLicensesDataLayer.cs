@@ -46,7 +46,8 @@ namespace DVLD_DataAccesLayer.Licenses
             }
             catch (Exception e)
             {
-                //Exception Here!
+                string SourceName = "DVLD_DetainedLicensesDL";
+                DVLD_DataAccessSettings.LogExceptions(SourceName, e);
             }
             finally
             {
@@ -79,7 +80,8 @@ namespace DVLD_DataAccesLayer.Licenses
             }
             catch (Exception e)
             {
-                //Exception Here!
+                string SourceName = "DVLD_DetainedLicensesDL";
+                DVLD_DataAccessSettings.LogExceptions(SourceName, e);
             }
             finally
             {
@@ -111,7 +113,8 @@ namespace DVLD_DataAccesLayer.Licenses
             }
             catch(Exception e)
             {
-                //Exception Here!
+                string SourceName = "DVLD_DetainedLicensesDL";
+                DVLD_DataAccessSettings.LogExceptions(SourceName, e);
             }
             finally
             {
@@ -159,7 +162,8 @@ namespace DVLD_DataAccesLayer.Licenses
             }
             catch(Exception e)
             {
-                //Exception Here!
+                string SourceName = "DVLD_DetainedLicensesDL";
+                DVLD_DataAccessSettings.LogExceptions(SourceName, e);
             }
             finally
             {
@@ -207,7 +211,8 @@ namespace DVLD_DataAccesLayer.Licenses
             }
             catch (Exception e)
             {
-                //Exception Here!
+                string SourceName = "DVLD_DetainedLicensesDL";
+                DVLD_DataAccessSettings.LogExceptions(SourceName, e);
             }
             finally
             {
@@ -255,7 +260,8 @@ namespace DVLD_DataAccesLayer.Licenses
             }
             catch (Exception e)
             {
-                //Exception Here!
+                string SourceName = "DVLD_DetainedLicensesDL";
+                DVLD_DataAccessSettings.LogExceptions(SourceName, e);
             }
             finally
             {
@@ -264,7 +270,6 @@ namespace DVLD_DataAccesLayer.Licenses
 
             return isFound;
         }
-
 
 
         public static bool DeleteDetainInfo(int DetainID)
@@ -283,7 +288,8 @@ namespace DVLD_DataAccesLayer.Licenses
             }
             catch(Exception e)
             {
-                //Exception Here!
+                string SourceName = "DVLD_DetainedLicensesDL";
+                DVLD_DataAccessSettings.LogExceptions(SourceName, e);
             }
             finally
             {
@@ -311,7 +317,8 @@ namespace DVLD_DataAccesLayer.Licenses
             }
             catch(Exception e)
             {
-                //Exception Here!
+                string SourceName = "DVLD_DetainedLicensesDL";
+                DVLD_DataAccessSettings.LogExceptions(SourceName, e);
             }
             finally
             {

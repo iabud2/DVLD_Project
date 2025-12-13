@@ -23,7 +23,7 @@ namespace Project_DVLD_.Controls
             DataTable LocalLicenses = clsLicenses.GetLicensesListForDriverID(DriverID);
             if (LocalLicenses.Rows.Count > 0)
             {
-                dgvLocalLicenses.DataSource = LocalLicenses;
+
                 dgvLocalLicenses.Columns[0].Width = 100;
                 dgvLocalLicenses.Columns[1].Width = 100;
                 dgvLocalLicenses.Columns[2].Width = 250;

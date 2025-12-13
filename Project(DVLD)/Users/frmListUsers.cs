@@ -28,6 +28,11 @@ namespace Project_DVLD_.Users
             dgvUsersList.DataSource = _dtUsers;
             lblRecordsCount.Text = _dtUsers.Rows.Count.ToString();
 
+            if (_dtUsers.Rows.Count == 0)
+            {
+                return;
+            }
+
             dgvUsersList.Columns[0].HeaderText = "User ID";
             dgvUsersList.Columns[0].Width = 110;
 
@@ -43,8 +48,6 @@ namespace Project_DVLD_.Users
             dgvUsersList.Columns[4].HeaderText = "Full Name";
             dgvUsersList.Columns[4].Width = 300;
         }
-
-
 
         private void frmListUsers_Load(object sender, EventArgs e)
         {

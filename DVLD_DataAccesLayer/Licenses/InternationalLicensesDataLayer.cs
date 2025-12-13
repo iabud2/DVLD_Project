@@ -33,9 +33,10 @@ namespace DVLD_DataAccesLayer.Licenses
                 }
                 Reader.Close();
             }
-            catch (Exception ex)
+            catch (Exception e)
             {
-                //Exception Here
+                string SourceName = "DVLD_InternationalLicensesDL";
+                DVLD_DataAccessSettings.LogExceptions(SourceName, e);
             }
             finally
             {
@@ -64,9 +65,10 @@ namespace DVLD_DataAccesLayer.Licenses
                 }
                 Reader.Close();
             }
-            catch(Exception ex) 
+            catch (Exception e)
             {
-                //Exception Here.
+                string SourceName = "DVLD_InternationalLicensesDL";
+                DVLD_DataAccessSettings.LogExceptions(SourceName, e);
             }
             finally
             {
@@ -76,7 +78,7 @@ namespace DVLD_DataAccesLayer.Licenses
             return dtLicenses;
         }
 
-        public static bool GetInternationlLicenseInfo(int IL_ID, ref int ApplicationID, ref int DriverID, ref int LocalLicenseID, ref DateTime IssueDate,
+        public static bool GetInternationalLicenseInfo(int IL_ID, ref int ApplicationID, ref int DriverID, ref int LocalLicenseID, ref DateTime IssueDate,
                                                         ref DateTime ExpirationDate, ref bool IsActive, ref int CreatedByUserID)
         {
             bool isFound = false;
@@ -104,9 +106,10 @@ namespace DVLD_DataAccesLayer.Licenses
                 }
                 Reader.Close();
             }
-            catch (Exception ex)
+            catch (Exception e)
             {
-                //Exception Here!
+                string SourceName = "DVLD_InternationalLicensesDL";
+                DVLD_DataAccessSettings.LogExceptions(SourceName, e);
             }
             finally
             {
@@ -117,7 +120,7 @@ namespace DVLD_DataAccesLayer.Licenses
             return isFound;
         }
 
-        public static bool GetInternatiolLicenseInfoByApplicationID(ref int IL_ID, int ApplicationID, ref int DriverID, ref int LocalLicenseID, ref DateTime IssueDate,
+        public static bool GetInternationalLicenseInfoByApplicationID(ref int IL_ID, int ApplicationID, ref int DriverID, ref int LocalLicenseID, ref DateTime IssueDate,
                                                         ref DateTime ExpirationDate, ref bool IsActive, ref int CreatedByUserID)
         {
             bool isFound = false;
@@ -145,9 +148,10 @@ namespace DVLD_DataAccesLayer.Licenses
                 }
                 Reader.Close();
             }
-            catch (Exception ex)
+            catch (Exception e)
             {
-                //Exception Here!
+                string SourceName = "DVLD_InternationalLicensesDL";
+                DVLD_DataAccessSettings.LogExceptions(SourceName, e);
             }
             finally
             {
@@ -186,9 +190,10 @@ namespace DVLD_DataAccesLayer.Licenses
                 }
                 Reader.Close();
             }
-            catch (Exception ex)
+            catch (Exception e)
             {
-                //Exception Here!
+                string SourceName = "DVLD_InternationalLicensesDL";
+                DVLD_DataAccessSettings.LogExceptions(SourceName, e);
             }
             finally
             {
@@ -226,9 +231,10 @@ namespace DVLD_DataAccesLayer.Licenses
                 }
                 Reader.Close();
             }
-            catch (Exception ex)
+            catch (Exception e)
             {
-                //Exception Here!
+                string SourceName = "DVLD_InternationalLicensesDL";
+                DVLD_DataAccessSettings.LogExceptions(SourceName, e);
             }
             finally
             {
@@ -273,9 +279,10 @@ namespace DVLD_DataAccesLayer.Licenses
                     NewID = InsertedID;
                 }
             }
-            catch (Exception ex)
+            catch (Exception e)
             {
-                //Exception Here!.
+                string SourceName = "DVLD_InternationalLicensesDL";
+                DVLD_DataAccessSettings.LogExceptions(SourceName, e);
             }
             finally
             {
@@ -303,7 +310,8 @@ namespace DVLD_DataAccesLayer.Licenses
             }
             catch (Exception e)
             {
-                //ExeptionHere!
+                string SourceName = "DVLD_InternationalLicensesDL";
+                DVLD_DataAccessSettings.LogExceptions(SourceName, e);
             }
             finally
             {
@@ -332,7 +340,8 @@ namespace DVLD_DataAccesLayer.Licenses
             }
             catch (Exception e)
             {
-                //ExeptionHere!
+                string SourceName = "DVLD_InternationalLicensesDL";
+                DVLD_DataAccessSettings.LogExceptions(SourceName, e);
             }
             finally
             {
@@ -361,7 +370,8 @@ namespace DVLD_DataAccesLayer.Licenses
             }
             catch (Exception e)
             {
-                //ExeptionHere!
+                string SourceName = "DVLD_InternationalLicensesDL";
+                DVLD_DataAccessSettings.LogExceptions(SourceName, e);
             }
             finally
             {
@@ -391,7 +401,8 @@ namespace DVLD_DataAccesLayer.Licenses
             }
             catch (Exception e)
             {
-                //ExeptionHere!
+                string SourceName = "DVLD_InternationalLicensesDL";
+                DVLD_DataAccessSettings.LogExceptions(SourceName, e); 
             }
             finally
             {
@@ -402,7 +413,7 @@ namespace DVLD_DataAccesLayer.Licenses
             return isFound;
         }
 
-        public static bool isDriverHaveAcive_IL_ByLLID(int LocalLicenseID)
+        public static bool isDriverHaveActive_IL_ByLLID(int LocalLicenseID)
         {
             bool isFound = false;
             SqlConnection Connection = new SqlConnection(DVLD_DataAccessSettings.ConnectionString);
@@ -421,7 +432,8 @@ namespace DVLD_DataAccesLayer.Licenses
             }
             catch (Exception e)
             {
-                //ExeptionHere!
+                string SourceName = "DVLD_InternationalLicensesDL";
+                DVLD_DataAccessSettings.LogExceptions(SourceName, e);
             }
             finally
             {
@@ -431,7 +443,6 @@ namespace DVLD_DataAccesLayer.Licenses
 
             return isFound;
         }
-
 
 
         public static bool UpdateInternationalLicenseInfo(int IL_ID, int ApplicationID, int DriverID, int LocalLicenseID, DateTime IssueDate,
@@ -464,9 +475,10 @@ namespace DVLD_DataAccesLayer.Licenses
                 Connection.Open();
                 EffectedRows = Command.ExecuteNonQuery();
             }
-            catch (Exception e) 
+            catch (Exception e)
             {
-                //Exception Here!
+                string SourceName = "DVLD_InternationalLicensesDL";
+                DVLD_DataAccessSettings.LogExceptions(SourceName, e);
             }
             finally
             {
@@ -491,7 +503,8 @@ namespace DVLD_DataAccesLayer.Licenses
             }
             catch (Exception e)
             {
-                //Exception Here!
+                string SourceName = "DVLD_InternationalLicensesDL";
+                DVLD_DataAccessSettings.LogExceptions(SourceName, e);
             }
             finally
             {

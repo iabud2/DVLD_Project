@@ -7,6 +7,8 @@ using System.Linq;
 using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
+using System.Diagnostics;
+
 
 namespace DVLD_DataAccesLayer.Applications
 {
@@ -14,6 +16,7 @@ namespace DVLD_DataAccesLayer.Applications
     {
         //crud operation for Applications Table:
         
+
         static public bool GetApplicationInfo(int ApplicationID, ref DateTime ApplicationDate, ref int PersonID, ref int ApplicationStatus,
                        ref float PaidFees, ref int ApplicaitonType, ref DateTime LastStatusDate, ref int CreatedBy)
         {
@@ -44,6 +47,8 @@ namespace DVLD_DataAccesLayer.Applications
             }
             catch (Exception e)
             {
+                string SourceName = "DVLD_ApplicationDL";
+                DVLD_DataAccessSettings.LogExceptions(SourceName, e);
                 isFound = false;
             }
             finally
@@ -73,7 +78,8 @@ namespace DVLD_DataAccesLayer.Applications
             }
             catch (Exception e) 
             {
-
+                string SourceName = "DVLD_ApplicationDL";
+                DVLD_DataAccessSettings.LogExceptions(SourceName, e);
             }
             finally
             {
@@ -111,9 +117,10 @@ namespace DVLD_DataAccesLayer.Applications
                     NewApplicationID = InsertedID;
                 }
             }
-            catch(Exception ex) 
+            catch(Exception e) 
             {
-
+                string SourceName = "DVLD_ApplicationDL";
+                DVLD_DataAccessSettings.LogExceptions(SourceName, e);
             }
             finally
             {
@@ -155,9 +162,10 @@ namespace DVLD_DataAccesLayer.Applications
                 connection.Open();
                 EffectedRows = command.ExecuteNonQuery();
             }
-            catch(Exception ex) 
+            catch(Exception e) 
             {
-
+                string SourceName = "DVLD_ApplicationDL";
+                DVLD_DataAccessSettings.LogExceptions(SourceName, e);
             }
             finally
             {
@@ -180,9 +188,10 @@ namespace DVLD_DataAccesLayer.Applications
                 connection.Open();
                 EffectedRows = command.ExecuteNonQuery();
             }
-            catch(Exception ex) 
+            catch(Exception e) 
             {
-
+                string SourceName = "DVLD_ApplicationDL";
+                DVLD_DataAccessSettings.LogExceptions(SourceName, e);
             }
             finally
             {
@@ -211,8 +220,10 @@ namespace DVLD_DataAccesLayer.Applications
                     ActiveApplicationID = ActiveID;
                 }
             }
-            catch(Exception ex) 
+            catch(Exception e) 
             {
+                string SourceName = "DVLD_ApplicationDL";
+                DVLD_DataAccessSettings.LogExceptions(SourceName, e);
             }
             finally
             {
@@ -252,8 +263,10 @@ namespace DVLD_DataAccesLayer.Applications
                     ActiveID = resultID;
                 }
             }
-            catch (Exception ex)
+            catch (Exception e)
             {
+                string SourceName = "DVLD_ApplicationDL";
+                DVLD_DataAccessSettings.LogExceptions(SourceName, e);
             }
             finally
             {
@@ -284,8 +297,11 @@ namespace DVLD_DataAccesLayer.Applications
                 Connection.Open();
                 EffectedRows = Command.ExecuteNonQuery();
             }
-            catch(Exception ex) 
-            { }
+            catch(Exception e) 
+            {
+                string SourceName = "DVLD_ApplicationDL";
+                DVLD_DataAccessSettings.LogExceptions(SourceName, e);
+            }
             finally 
             {
                 Connection.Close();
@@ -312,9 +328,10 @@ namespace DVLD_DataAccesLayer.Applications
                 isFound = Reader.HasRows;
                 Reader.Close();
             }
-            catch (Exception ex)
+            catch (Exception e)
             {
-                //Type Any Exception.
+                string SourceName = "DVLD_ApplicationDL";
+                DVLD_DataAccessSettings.LogExceptions(SourceName, e);
             }
             finally
             {

@@ -1,14 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.ComponentModel;
+using System.ComponentModel.Design;
 using System.Data;
 using System.Data.SqlClient;
-using System.Security.Cryptography.X509Certificates;
-using System.ComponentModel.Design;
+using System.Diagnostics;
+using System.Linq;
 using System.Runtime.Remoting.Messaging;
-using System.ComponentModel;
+using System.Security.Cryptography.X509Certificates;
+using System.Text;
+using System.Threading.Tasks;
 namespace DVLD_DataAccesLayer.Applications
 {
     static public class Local_DL_ApplicationsDataLayer
@@ -16,6 +17,8 @@ namespace DVLD_DataAccesLayer.Applications
         //we need to manage crud operations
         //for Local Driving Licence Applications.
         //Columns "LocalDrivingLicenseApplicationID"	"ApplicationID"	"LicenseClassID"
+
+
 
         static public bool FindLocal_DL_Application(int LDLA_ID, ref int ApplicationID, ref int ClassID)
         {
@@ -39,9 +42,10 @@ namespace DVLD_DataAccesLayer.Applications
                 }
                 reader.Close();
             }
-            catch (Exception ex)
+            catch (Exception e)
             {
-
+                string SourceName = "DVLD_Local_DL_ApplicationsDL";
+                DVLD_DataAccessSettings.LogExceptions(SourceName, e);
             }
             finally
             {
@@ -50,7 +54,8 @@ namespace DVLD_DataAccesLayer.Applications
             return isFound;
         }
 
-        static public bool GetLDLA_ByApplicationiD(ref int LDLAID, int ApplicationID, ref int LicenseClassID)
+
+        static public bool GetLDLA_ByApplicationID(ref int LDLAID, int ApplicationID, ref int LicenseClassID)
         {
             bool IsFound = false;
             SqlConnection Connection = new SqlConnection(DVLD_DataAccessSettings.ConnectionString);
@@ -72,9 +77,10 @@ namespace DVLD_DataAccesLayer.Applications
                 }
 
             }
-            catch (Exception ex) 
+            catch (Exception e) 
             {
-                //Type Exception.
+                string SourceName = "DVLD_Local_DL_ApplicationsDL";
+                DVLD_DataAccessSettings.LogExceptions(SourceName, e);
             }
             finally
             {
@@ -82,6 +88,7 @@ namespace DVLD_DataAccesLayer.Applications
             }
             return IsFound;
         }
+
 
         static public bool DoesPassTestType(int LDLAID, int TestTypeID)
         {
@@ -112,9 +119,10 @@ namespace DVLD_DataAccesLayer.Applications
                 }
                                
             }
-            catch(Exception ex) 
+            catch(Exception e) 
             {
-                //Type any exception.
+                string SourceName = "DVLD_Local_DL_ApplicationsDL";
+                DVLD_DataAccessSettings.LogExceptions(SourceName, e);
             }
             finally
             {
@@ -123,6 +131,7 @@ namespace DVLD_DataAccesLayer.Applications
 
             return isPass;                  
         }
+
 
         static public bool isPersonAttendTestType(int LDLAID, int TestTypeID)
         {
@@ -148,9 +157,10 @@ namespace DVLD_DataAccesLayer.Applications
                     isFound = true;
                 }
             }
-            catch (Exception ex) 
+            catch (Exception e) 
             {
-                //Exception Here
+                string SourceName = "DVLD_Local_DL_ApplicationsDL";
+                DVLD_DataAccessSettings.LogExceptions(SourceName, e);
             }
             finally
             {
@@ -158,6 +168,7 @@ namespace DVLD_DataAccesLayer.Applications
             }
             return isFound;
         }
+
 
         static public int TotalTrailsPerTest(int LDLAID, int TestTypeID)
         {
@@ -186,7 +197,8 @@ namespace DVLD_DataAccesLayer.Applications
             }
             catch (Exception e) 
             {
-                //Tybe Exception Here.
+                string SourceName = "DVLD_Local_DL_ApplicationsDL";
+                DVLD_DataAccessSettings.LogExceptions(SourceName, e);
             }
             finally
             {
@@ -195,6 +207,7 @@ namespace DVLD_DataAccesLayer.Applications
 
             return TotalTrails;
         }
+
 
         static public int TotalPassedTests(int LDLA_ID)
         {
@@ -219,7 +232,8 @@ namespace DVLD_DataAccesLayer.Applications
             }
             catch(Exception e) 
             {
-                //Tybe Exception Here.
+                string SourceName = "DVLD_Local_DL_ApplicationsDL";
+                DVLD_DataAccessSettings.LogExceptions(SourceName, e);
             }
             finally
             {
@@ -229,6 +243,8 @@ namespace DVLD_DataAccesLayer.Applications
 
             return TotalTrials;
         }
+
+
         public static bool IsThereAnActiveScheduledTest(int LDLAID, int TestTypeID)
         {
             bool isFound = false;
@@ -257,7 +273,8 @@ namespace DVLD_DataAccesLayer.Applications
             }
             catch(Exception e) 
             {
-                //Type Exception
+                string SourceName = "DVLD_Local_DL_ApplicationsDL";
+                DVLD_DataAccessSettings.LogExceptions(SourceName, e);
             }
             finally
             {
@@ -287,7 +304,8 @@ namespace DVLD_DataAccesLayer.Applications
             }
             catch (Exception e)
             {
-
+                string SourceName = "DVLD_Local_DL_ApplicationsDL";
+                DVLD_DataAccessSettings.LogExceptions(SourceName, e);
             }
             finally
             {
@@ -296,6 +314,7 @@ namespace DVLD_DataAccesLayer.Applications
 
             return dt;
         }
+
 
         public static int AddNew_LDLA(int ApplicationID, int ClassID)
         {
@@ -322,7 +341,8 @@ namespace DVLD_DataAccesLayer.Applications
             }
             catch (Exception e)
             {
-
+                string SourceName = "DVLD_Local_DL_ApplicationsDL";
+                DVLD_DataAccessSettings.LogExceptions(SourceName, e);
             }
             finally
             {
@@ -330,6 +350,7 @@ namespace DVLD_DataAccesLayer.Applications
             }
             return NewID;
         }
+
 
         public static bool Update_LDLA(int ID, int ClassID)
         {
@@ -350,7 +371,8 @@ namespace DVLD_DataAccesLayer.Applications
             }
             catch (Exception e)
             {
-
+                string SourceName = "DVLD_Local_DL_ApplicationsDL";
+                DVLD_DataAccessSettings.LogExceptions(SourceName, e);
             }
             finally
             {
@@ -359,6 +381,7 @@ namespace DVLD_DataAccesLayer.Applications
 
             return (effectedRows > 0);
         }
+
 
         public static bool Delete_LDLA(int ID)
         {
@@ -376,7 +399,8 @@ namespace DVLD_DataAccesLayer.Applications
             }
             catch (Exception e)
             {
-
+                string SourceName = "DVLD_Local_DL_ApplicationsDL";
+                DVLD_DataAccessSettings.LogExceptions(SourceName, e);
             }
             finally
             {

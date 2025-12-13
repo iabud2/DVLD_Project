@@ -79,7 +79,7 @@ namespace DVLD_BusinessLayer.GeneralClasses
             }
         }
 
-        static public void StoreLoginInfo(string username, string password, ref string ErrorMessage)
+        static public void StoreLoginInfo(string username, string password ,ref string ErrorMessage)
         {
             string KeyPath = @"HKEY_CURRENT_USER\SOFTWARE\DVLD_LoginInfo";
             try
@@ -100,6 +100,7 @@ namespace DVLD_BusinessLayer.GeneralClasses
             {
                 username = Registry.GetValue(KeyPath, "UserName", RegistryValueKind.String) as string;
                 password = Registry.GetValue(KeyPath, "Password", RegistryValueKind.String) as string;
+
                 return true;
             }
             catch (Exception ex)

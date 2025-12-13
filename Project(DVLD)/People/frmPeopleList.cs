@@ -30,11 +30,21 @@ namespace Project_DVLD_
         private void _RefreshPeopleTable()
         {
             _dtPeopleList = clsPerson.GetPeopleList();
+            if (_dtPeopleList.Rows.Count == 0)
+            {
+                return;
+            }
+
+
             _People = _dtPeopleList.DefaultView.ToTable(false, "PersonID", "NationalNo", "FirstName", "SecondName", "ThirdName",
                                             "LastName", "DateOfBirth", "GendorCaption", "Address", "Phone", "Email", "CountryName");
             
             dgvPeopleList.DataSource = _People;
             lbRecords.Text = _People.Rows.Count.ToString() + " Record(s)";
+
+
+
+
         }
 
         private void btnAddNew_Click(object sender, EventArgs e)

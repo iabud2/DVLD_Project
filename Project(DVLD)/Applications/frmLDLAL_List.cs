@@ -30,6 +30,10 @@ namespace Project_DVLD_.Applications
             dt_LDLA = cls_LDLA.ListAll_LDLA();
             dgvLDLA_List.DataSource = dt_LDLA;
             
+            if(dt_LDLA.Rows.Count == 0)
+            {
+                return;
+            }
             dgvLDLA_List.Columns[0].Width = 100;
             dgvLDLA_List.Columns[0].HeaderText = "LDLA_ID";
             dgvLDLA_List.Columns[1].Width = 250;

@@ -87,7 +87,7 @@ namespace DVLD_BusinessLayer.Licenses
             bool isActive = false;
             
             
-            if(InternationalLicensesDataLayer.GetInternationlLicenseInfo(IL_ID, ref ApplicationID, ref DriverID, ref LocalLicenseID, ref issueDate,
+            if(InternationalLicensesDataLayer.GetInternationalLicenseInfo(IL_ID, ref ApplicationID, ref DriverID, ref LocalLicenseID, ref issueDate,
                                                         ref expirationDate, ref isActive, ref CreatedBy))
             {
                 clsApplications Application = clsApplications.GetApplicationInfo(ApplicationID);
@@ -164,7 +164,7 @@ namespace DVLD_BusinessLayer.Licenses
 
         public static bool IsExist_ByLLID(int LocalLicenseID)
         {
-            return InternationalLicensesDataLayer.isDriverHaveAcive_IL_ByLLID(LocalLicenseID);
+            return InternationalLicensesDataLayer.isDriverHaveActive_IL_ByLLID(LocalLicenseID);
         }
 
         public static bool DoesDriverHaveActiveLicense(int DriverID)

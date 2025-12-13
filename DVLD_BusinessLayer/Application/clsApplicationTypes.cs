@@ -67,7 +67,7 @@ namespace DVLD_BusinessLayer.Application
         {
             string Name = "";
             float Fees = -1;
-            if(ApplicationsTypesDataLayer.GetApplictionTypeInfo(ID, ref Name, ref Fees))
+            if(ApplicationsTypesDataLayer.GetApplicationTypeInfo(ID, ref Name, ref Fees))
             {
                 return new clsApplicationTypes(ID, Name, Fees);
             }

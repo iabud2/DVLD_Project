@@ -35,6 +35,9 @@ namespace Project_DVLD_
         {
             dgvDriversList.DataSource = dtDrivers;
             lbRecords.Text = dgvDriversList.Rows.Count.ToString() + " Driver(s)";
+            
+            if (dgvDriversList.Rows.Count == 0)
+                return;
             dgvDriversList.Columns[0].Width = 100;
             dgvDriversList.Columns[1].Width = 100;
             dgvDriversList.Columns[2].Width = 150;
