@@ -40,7 +40,8 @@ namespace Project_DVLD_
                 MessageBox.Show("UserName/Password is incorrect!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return false;
             }
-            if (UserLog.Password != tbPassword.Text)
+            //if (tbPassword.Text != UserLog.Password)
+            if (!clsPasswordHasher.VerifyPassword(tbPassword.Text, UserLog.Password))
             {
                 MessageBox.Show("UserName/Password is incorrect!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return false;

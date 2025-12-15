@@ -1,4 +1,5 @@
-﻿using DVLD_DataAccesLayer.People;
+﻿using DVLD_BusinessLayer.GeneralClasses;
+using DVLD_DataAccesLayer.People;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -78,13 +79,14 @@ namespace DVLD_BusinessLayer
             {
                 return false;
             }
-
-             this.UserID = UsersDataAccess.AddNewUser(this.PersonID, this.UserName, this.Password, this.IsActive);
+            this.Password = clsPasswordHasher.HashPassword(this.Password);
+            this.UserID = UsersDataAccess.AddNewUser(this.PersonID, this.UserName, this.Password, this.IsActive);
             return (this.UserID != -1);
         }
         
         private bool Update()
         {
+            this.Password = clsPasswordHasher.HashPassword(this.Password);
             return (UsersDataAccess.UpdateUser(this.UserID, this.PersonID, this.UserName, this.Password, this.IsActive));
         }
 
